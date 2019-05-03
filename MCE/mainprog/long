@@ -1,0 +1,2432 @@
+ Hello, programme is starting
+ Read In Basis Set
+ ndof                 1
+ nconf                2
+ nbasisfns            1
+ calling CTODin
+ c (-9.38912760466337204E-003, 2.09205318242311478E-003)
+ bf z (  4.0643587112426758     , -2.9110481739044189     )
+ bf D (-9.38912760466337204E-003, 2.09205318242311478E-003)
+ bf conf s   0.0000000000000000        0.0000000000000000     
+ bf conf d (  1.0000000000000000     ,  0.0000000000000000     ) (  0.0000000000000000     ,  0.0000000000000000     )
+ bf conf a (  1.0000000000000000     ,  0.0000000000000000     ) (  0.0000000000000000     ,  0.0000000000000000     )
+ finished bs initialisation
+ initial norm2   1.0000000000000000     
+ spdelta   1.0000000000000000     
+ just read spw   2.5000000000000000     
+ NamesysSpinBose            
+ initial ehr (  322.70314719399369     ,  0.0000000000000000     )
+ tmax
+ number of basis functions           1 dimensions           1
+ initial time   0.0000000000000000      tmax  0.20000000000000001      dt  1.00000000000000002E-003
+ *************************************************************************
+ Ready to start main do loop
+ starting main do loop
+ before derivs
+ z= (  4.0643587112426758     , -2.9110481739044189     )
+ dbsdtZ ( -36.388102173805230     , -51.178218390149482     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.707975215735182     , -50.950805302394130     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.706535530460926     , -50.948780621196356     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.024961931560931     , -50.719385948537415     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000000184     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719398300     ,-3.98552612726553023E-016)
+ before derivs
+ z= (  4.0276516969763829     , -2.9619976366020637     )
+ dbsdtZ ( -37.024970457526472     , -50.719379964357032     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.341975917795352     , -50.487985586663640     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.340511032465521     , -50.485979059269759     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.656045195757940     , -50.252621334087706     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000000366     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719397231     ,-4.51034456501074252E-017)
+ before derivs
+ z= (  3.9903106987174151     , -3.0124842917004488     )
+ dbsdtZ ( -37.656053646256986     , -50.252615243777669     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.970141984063737     , -50.017275731068921     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.968652127563708     , -50.015287671077260     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.281244742135918     , -49.778003355088522     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000000555     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719396174     , 3.46079874556214778E-016)
+ before derivs
+ z= (  3.9523415509488071     , -3.0625002492676421     )
+ dbsdtZ ( -38.281253115847647     , -49.777997159600417     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.592375246186563     , -49.538749283267528     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.590860651303771     , -49.536780001390113     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.900462865855324     , -49.295606169881317     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000000742     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719395122     ,-6.55722932820391319E-016)
+ before derivs
+ z= (  3.9137501863193598     , -3.1120376929174416     )
+ dbsdtZ ( -38.900471161470897     , -49.295599870183068     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.208578462801725     , -49.052481012338646     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.207039366189235     , -49.050530816352641     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.513602796665481     , -48.805505152385869     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000000930     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719394071     , 1.10414471619565968E-015)
+ before derivs
+ z= (  3.8745426347166734     , -3.1610888810307669     )
+ dbsdtZ ( -39.513611012888262     , -48.805498749461755     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.818655334733762     , -48.558546897097187     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.817091976873265     , -48.556616091796684     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.120568714025751     , -48.307776880319928     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000001124     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719393036     , 1.18830845093368873E-015)
+ before derivs
+ z= (  3.8347250223249856     , -3.2096461479653620     )
+ dbsdtZ ( -40.120576849571520     , -48.307770375170378     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.422510520041470     , -48.057024114218621     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.420923145205691     , -48.055113001367069     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.721265762078509     , -47.802499123230497     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000001317     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719391996     ,-1.28894697649581391E-015)
+ before derivs
+ z= (  3.7943035706679615     , -3.2577019052536240     )
+ dbsdtZ ( -40.721273815675659     , -47.802492516871844     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.020049648915993     , -47.547991026176717     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.018438505130575     , -47.546099904459751     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.315600064471163     , -47.289750830338761     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000001510     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719390961     ,-3.07224779199765513E-015)
+ before derivs
+ z= (  3.7532845956365883     , -3.3052486427883712     )
+ dbsdtZ ( -41.315608034860873     , -47.289744123803167     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.611179338426922     , -47.031527168995858     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.609544677431607     , -47.029656333974650     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.903478739025175     , -46.769612118200840     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000001705     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719389944     , 2.40956055428493895E-015)
+ before derivs
+ z= (  3.7116745065023213     , -3.3522789299963618     )
+ dbsdtZ ( -41.903486624961666     , -46.769605312536193     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.195807207114221     , -46.507713239820106     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.194149284323544     , -46.505862983885159     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.484809912249709     , -46.242164258186101     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000001901     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719388909     ,-9.76685739391674329E-016)
+ before derivs
+ z= (  3.6694798049156403     , -3.3987854169993841     )
+ dbsdtZ ( -42.484817712500366     , -46.242157354455706     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.773841889423593     , -45.976631084300635     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.772160963886861     , -45.974801696626002     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.059502733697556     , -45.707489663774780     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000002098     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719387892     , 5.54747288145258921E-017)
+ before derivs
+ z= (  3.6267070838901705     , -3.4447608357627315     )
+ dbsdtZ ( -43.059510447043174     , -45.707482663057284     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.345193049982896     , -45.438363683803729     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.343489384343876     , -45.436555450301981     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.627467390161165     , -45.165671877677326     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000002300     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719386880     , 1.06871925724264308E-015)
+ before derivs
+ z= (  3.5833630267725276     , -3.4901980012308891     )
+ dbsdtZ ( -43.627475015396143     , -45.165664781066560     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.909771397717975     , -44.892995142441443     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.908045258173665     , -44.891208345718830     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.188615119706711     , -44.616795558777277     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000002498     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719385863     , 6.55800859851538714E-016)
+ before derivs
+ z= (  3.5394544061980464     , -3.5350898124502499     )
+ dbsdtZ ( -44.188622655639151     , -44.616788367382000     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.467488699804761     , -44.340610673926506     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.465740356063918     , -44.338845593238915     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.742858225543593     , -44.060946468899544     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000002696     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719384845     ,-9.36632092414860229E-017)
+ before derivs
+ z= (  3.4949880830325597     , -3.5794292536786854     )
+ dbsdtZ ( -44.742865670995627     , -44.060939183843367     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.018257795456364     , -43.781296588254150     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.016487520697282     , -43.779553499463447     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.290110089727754     , -43.498211459406555     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000002898     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719383833     ,-3.20569359767283388E-015)
+ before derivs
+ z= (  3.4499710053003878     , -3.6232093954817994     )
+ dbsdtZ ( -45.290117443535600     , -43.498204081827716     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.561992609542422     , -43.215140278212495     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.560200680370222     , -43.213419453743313     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.830285186696109     , -42.928678457623938     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000003100     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719382827     , 4.97532076030714893E-015)
+ before derivs
+ z= (  3.4044102070987114     , -3.6664233958156931     )
+ dbsdtZ ( -45.830292447710356     , -42.928670988675172     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.098608166038822     , -42.642230205723656     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.096794862442295     , -42.640531914520963     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.363299096630449     , -42.352436453098377     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000003300     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719381815     ,-2.35534621049592746E-015)
+ before derivs
+ z= (  3.3583128074984945     , -3.7090645010960701     )
+ dbsdtZ ( -46.363306263716169     , -42.352428893946630     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.628020601305671     , -42.062655888018000     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.626186206613454     , -42.060980395504998     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.889068518648457     , -41.769575483689138     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000003504     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719380826     , 1.00314281349916240E-015)
+ before derivs
+ z= (  3.3116860094321274     , -3.7511260472535173     )
+ dbsdtZ ( -46.889075590685387     , -41.769567835515488     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.150147177191300     , -41.476507883643258     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.148291978027622     , -41.474855451679957     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.407511283819723     , -41.180186621496041     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000003708     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719379832     , 3.30056382886415728E-015)
+ before derivs
+ z= (  3.2645370985679705     , -3.7926014607747938     )
+ dbsdtZ ( -47.407518259702492     , -41.180178885495472     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.664906293960534     , -40.883877778311252     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.663030580200406     , -40.882248665153533     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.918546368005117     , -40.584361958625813     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000003910     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719378820     , 4.63752232687623944E-016)
+ before derivs
+ z= (  3.2168734421719654     , -3.8334842597299690     )
+ dbsdtZ ( -47.918553246643341     , -40.584354136007029     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.172217503044841     , -40.284858170583817     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.170321567768767     , -40.283252630843059     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.422093904516970     , -39.982194592799019     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000004110     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719377819     ,-2.88302910191051698E-016)
+ before derivs
+ z= (  3.1687024879565007     , -3.8737680547852458     )
+ dbsdtZ ( -48.422100684835470     , -39.982186684784246     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.672001519612813     , -39.679542657400759     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.670085659060973     , -39.677960942004127     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.918075196598501     , -39.373778612799896     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000004312     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719376813     , 1.85664370433869658E-015)
+ before derivs
+ z= (  3.1200317629167036     , -3.9134465502013116     )
+ dbsdtZ ( -48.918081877537475     , -39.373770620624747     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.164180234958472     , -39.068025819451627     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.162244748484440     , -39.066468175602807     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.406412729720373     , -38.759209083771445     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000004512     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719375807     ,-3.14739486101216215E-015)
+ before derivs
+ z= (  3.0708688721543465     , -3.9525135448170623     )
+ dbsdtZ ( -49.406419310235570     , -38.759201008684649     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.648676728706036     , -38.450403206393950     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.646721918729952     , -38.448869877534563     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.887030183692509     , -38.138582032357881     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000004714     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719374807     , 9.55417080899297749E-015)
+ before derivs
+ z= (  3.0212214976895466     , -3.9909629330185457     )
+ dbsdtZ ( -49.887036662755335     , -38.138573875621105     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.125415280828761     , -37.826771321920020     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.123441452790104     , -37.825262547691558     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.359852444589137     , -37.511994431696891     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000004916     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719373812     , 2.83115002795708559E-015)
+ before derivs
+ z= (  2.9710973972604497     , -4.0287887056929694     )
+ dbsdtZ ( -50.359858821186876     , -37.511986194584608     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.594321383480320     , -37.197227608674659     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.592328845790199     , -37.195743624881111     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.824805616485413     , -36.879544186264127     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000005118     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719372806     ,-2.97976195855285259E-015)
+ before derivs
+ z= (  2.9205044031110807     , -4.0659849511676294     )
+ dbsdtZ ( -50.824811889621373     , -36.879535870063364     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.055321752636644     , -36.561870433026321     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.053310816629505     , -36.560411471597291     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.281817033003747     , -36.241330116572264     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000005320     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719371805     , 2.42797759165708921E-015)
+ before derivs
+ z= (  2.8694504207675546     , -4.1025458561336094     )
+ dbsdtZ ( -51.281823201697399     , -36.241321722582370     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.508344339546525     , -35.920799069693970     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.506315319431629     , -35.919365358648491     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.730815268667818     , -35.597451943726675     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000005520     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719370799     , 3.29051971217561579E-015)
+ before derivs
+ z= (  2.8179434278028346     , -4.1384657065541086     )
+ dbsdtZ ( -51.730821331954900     , -35.597443473259169     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.953318341989231     , -35.274113686231942     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.951271554801394     , -35.272705449642771     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.171730150062650     , -34.948010273840829     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000005718     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719369782     , 6.01965986822897148E-015)
+ before derivs
+ z= (  2.7659914725902346     , -4.1737388885572502     )
+ dbsdtZ ( -52.171736106995453     , -34.948001728219189     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.390174215337225     , -34.621915327375483     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.388109980887414     , -34.620532785334234     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.604492766799233     , -34.293106582313200     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000005915     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719368770     , 9.21985198690938867E-016)
+ before derivs
+ z= (  2.7136026730458607     , -4.2083598893132423     )
+ dbsdtZ ( -52.604498616446641     , -34.293097962872658     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.818843683422351     , -33.964305899249240     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.816762324247591     , -33.962949267831902     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.029035482281550     , -33.632843197968540     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000006115     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719367758     ,-2.93291256624021723E-015)
+ before derivs
+ z= (  2.6607852153601828     , -4.2423232978957426     )
+ dbsdtZ ( -53.029041223729195     , -33.632834506055843     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.239259749203782     , -33.301388153441160     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.237161590516827     , -33.300057644674411     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.445291944274530     , -32.967323287065774     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000006311     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719366741     , 7.46442024943810845E-015)
+ before derivs
+ z= (  2.6075473527189419     , -4.2756238061273013     )
+ dbsdtZ ( -53.445297576624988     , -32.967314524038983     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.651356705236182     , -32.633265670944475     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.649242074874643     , -32.631961492772540     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.853197095271447     , -32.296650837175164     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000006506     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719365723     ,-3.25641477758736864E-015)
+ before derivs
+ z= (  2.5538974040135889     , -4.3082562094087429     )
+ dbsdtZ ( -53.853202617644314     , -32.296642004403481     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.055070143936135     , -31.960042845970026     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.052939372311265     , -31.958765202222200     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.252687182658796     , -31.620930640927231     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000006699     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719364706     , 3.61671548829503586E-015)
+ before derivs
+ z= (  2.4998437525414561     , -4.3402154075323622     )
+ dbsdtZ ( -54.252692594190862     , -31.620921739790745     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.450336967645534     , -31.281824869631738     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.448190387690609     , -31.280573959990587     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.643699768677358     , -30.940268279635962     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000006894     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719363677     ,-4.50141090851605141E-015)
+ before derivs
+ z= (  2.4453948446958660     , -4.3714964054788075     )
+ dbsdtZ ( -54.643705068522749     , -30.940259311525441     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.837095398490348     , -30.598717713507515     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.834933345608583     , -30.597493733477666     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.026173740177740     , -30.254770106798780     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007085     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719362648     ,-2.90968014656292628E-015)
+ before derivs
+ z= (  2.3905591886463831     , -4.4020943141975231     )
+ dbsdtZ ( -55.026178927508020     , -30.254761073115453     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.215284988032906     , -29.910828113078377     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.213107800045137     , -29.909631253956011     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.400049318168890     , -29.564543231476051     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007274     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719361608     , 1.23121117793188739E-014)
+ before derivs
+ z= (  2.3353453530094108     , -4.4320043513706331     )
+ dbsdtZ ( -55.400054392173203     , -29.564534133631390     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.584846626716718     , -29.218263551048246     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.582654643808475     , -29.217093999891208     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.765268067158175     , -28.869695501552549     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007463     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719360567     ,-5.83111711043374226E-015)
+ before derivs
+ z= (  2.2797619655093473     , -4.4612218421601435     )
+ dbsdtZ ( -55.765273027043399     , -28.869686340968073     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.945722553101731     , -28.521132240547129     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.943516117770173     , -28.519990180145726     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.121772904281471     , -28.170335486883626     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007649     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719359521     , 1.24147247386810489E-014)
+ before derivs
+ z= (  2.2238177116305025     , -4.4897422199383499     )
+ dbsdtZ ( -56.121777749272290     , -28.170326264990639     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.297856362889192     , -27.819543108220198     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.295635819889590     , -27.818428717068699     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.469508108221802     , -27.466572462328589     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007834     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719358470     , 6.87240520567955482E-015)
+ before derivs
+ z= (  2.1675213332599936     , -4.5175610270013324     )
+ dbsdtZ ( -56.469512837560885     , -27.466563180567981     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.641193017734295     , -27.113605777205532     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.638958714026089     , -27.112519229474248     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.808419327915395     , -26.758516390674103     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008018     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719357418     ,-2.83432131931160569E-015)
+ before derivs
+ z= (  2.1108816273218274     , -4.5446739152654327     )
+ dbsdtZ ( -56.808423940863449     , -26.758507050496107     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.975678853845345     , -26.403430550003094     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.973431138537975     , -26.402372015511208     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.138453591043337     , -26.046277905450115     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008198     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719356355     ,-7.70028843206232994E-015)
+ before derivs
+ z= (  2.0539074444023817     , -4.5710766469465955     )
+ dbsdtZ ( -57.138458086879282     , -26.046268508314096     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.301261590368185     , -25.689128391237659     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.299000814666513     , -25.688098035426741     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.459559312308038     , -25.329968293641130     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008378     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719355292     ,-1.00461224625605916E-014)
+ before derivs
+ z= (  1.9966076873675056     , -4.5967650952224766     )
+ dbsdtZ ( -57.459563690329091     , -25.329958841015376     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.617890337554542     , -24.970810910318445     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.615616854703973     , -24.969808894226585     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.771686301492757     , -24.609699478295507     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008555     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719354224     , 1.32159230390935245E-014)
+ before derivs
+ z= (  1.9389913099714491     , -4.6217352448772102     )
+ dbsdtZ ( -57.771690561014545     , -24.609689971656952     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.925515604712821     , -24.248590343997975     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.923229769944093     , -24.247616824234669     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.074785771303219     , -23.885584001035422     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008731     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719353138     , 3.52442955462578533E-015)
+ before derivs
+ z= (  1.8810673154578439     , -4.6459831929287363     )
+ dbsdtZ ( -58.074789911659892     , -23.885574441869441     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.224089307940396     , -23.522579538833149     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.221791478414126     , -23.521634667554871     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.368810344990010     , -23.157735004470304     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008904     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719352052     ,-1.99241122732229936E-015)
+ before derivs
+ z= (  1.8228447551529507     , -4.6695051492385886     )
+ dbsdtZ ( -58.368814365534327     , -23.157725394270486     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.513564777636176     , -22.792891933551097     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.511255312386957     , -22.791975858437514     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.653714063750385     , -22.426266214516481     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009075     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719350949     , 4.76768418581491327E-015)
+ before derivs
+ z= (  1.7643327270513955     , -4.6922974371040489     )
+ dbsdtZ ( -58.653717963853822     , -22.426256554784381     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.793896765791878     , -22.059641541322598     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.791576025672235     , -22.058754405553554     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.929452393908775     , -21.691291922625823     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009244     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719349858     , 1.15483794402293505E-014)
+ before derivs
+ z= (  1.7055403743946138     , -4.7143564938325762     )
+ dbsdtZ ( -58.929456172961665     , -21.691282214870743     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.065041453061419     , -21.322942931945857     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.062709800685411     , -21.322084874179030     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.195982233874375     , -20.952926967926089     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009412     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719348755     ,-1.00585230249083946E-014)
+ before derivs
+ z= (  1.6464768842422255     , -4.7356788712984175     )
+ dbsdtZ ( -59.195985891285922     , -20.952917213664829     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.326956455606833     , -20.582911213943479     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.324614255293412     , -20.582082368292728     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.453261920874965     , -20.211286719275837     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009572     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719347624     , 3.21135262479343986E-015)
+ before derivs
+ z= (  1.5871514860365652     , -4.7562612364813193     )
+ dbsdtZ ( -59.453265456073389     , -20.211276920032457     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.579600831720207     , -19.839662016575335     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.577248449436198     , -19.838862512589760     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.701251237466089     , -19.466487057236709     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009734     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719346499     , 9.98929671619519510E-016)
+ before derivs
+ z= (  1.5275734501605898     , -4.7761003719872521     )
+ dbsdtZ ( -59.701254649898750     , -19.466477214542312     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.822935088219793     , -19.093311471770164     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.820572891522815     , -19.092541434413942     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.939911417814187     , -18.718644355965818     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009892     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719345362     , 1.41429701066772551E-014)
+ before derivs
+ z= (  1.4677520864893900     , -4.7951931765510647     )
+ dbsdtZ ( -59.939914706947590     , -18.718634471358296     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.056921186620222     , -18.343976195978808     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.054549544601208     , -18.343235745611661     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.169205153752920     , -17.967875465031209     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010045     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719344219     ,-1.04206329979913970E-014)
+ before derivs
+ z= (  1.4076967429355327     , -4.8135366655209930     )
+ dbsdtZ ( -60.169208319072851     , -17.967865540054984     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.281522549075163     , -17.591773271951851     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.279141832300674     , -17.591062524310271     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.389096600611879     , -17.214297691153106     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010196     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719343060     ,-1.30729303250698425E-014)
+ before derivs
+ z= (  1.3474168039884600     , -4.8311279713249480     )
+ dbsdtZ ( -60.389099641623424     , -17.214287727358915     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.496704064091766     , -16.836820230444474     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.494314644546087     , -16.836139296623688     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.599551382816315     , -16.458028779873842     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010352     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719341911     , 1.05939291627360488E-014)
+ before derivs
+ z= (  1.2869216892481741     , -4.8479643439185098     )
+ dbsdtZ ( -60.599554299044094     , -16.458018778818506     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.702432092016032     , -16.079235031851482     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.700034343043072     , -16.078584018288108     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.800536599257711     , -15.699186897159425     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010496     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719340746     ,-2.49241816421830187E-015)
+ before derivs
+ z= (  1.2262208519534374     , -4.8640431512145526     )
+ dbsdtZ ( -60.800539390245717     , -15.699176860405561     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.898674470288150     , -15.319136047775324     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.896268766533140     , -15.318515056230787     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.992020828433574     , -14.937890610935458     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010640     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719339564     ,-8.20898253886537255E-015)
+ before derivs
+ z= (  1.1653237775047172     , -4.8793618794944447     )
+ dbsdtZ ( -60.992023493745442     , -14.937880540051271     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.085400518467168     , -14.556642042529985     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.082987235818017     , -14.556051170074625     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.173974133356282     , -14.174258872560420     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010780     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719338376     ,-5.08818790052878445E-015)
+ before derivs
+ z= (  1.1042399819821052     , -4.8939181338007485     )
+ dbsdtZ ( -61.173976672575293     , -14.174248769119448     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.262581043023829     , -13.791872154583599     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.260160558552421     , -13.791311493581553     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.346368066229928     , -13.408410998239164     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010918     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719337182     , 8.02287923595823571E-015)
+ before derivs
+ z= (  1.0429790106584456     , -4.9077096383113634     )
+ dbsdtZ ( -61.346370478959017     , -13.408400863820026     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.430188341901228     , -13.024945877942807     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.427761033804622     , -13.024415516037612     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.509175672894287     , -12.640466650379498     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011051     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719335971     , 1.91345420411104250E-015)
+ before derivs
+ z= ( 0.98155043650790141     , -4.9207342366950568     )
+ dbsdtZ ( -61.509177958756176     , -12.640456486565666     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.588196208842511     , -12.255983043481637     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.585762456383691     , -12.255483063582560     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.662371497035736     , -11.870545818894893     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011184     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719334755     , 1.42549004284592273E-014)
+ before derivs
+ z= ( 0.91996385871019404     , -4.9329898924483215     )
+ dbsdtZ ( -61.662373655672972     , -11.870535627274410     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.736579937484663     , -11.485103800217887     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.734140120933347     , -11.484634280486995     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.805931584163801     , -11.098768802456012     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011313     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719333533     , 1.17613709570141278E-014)
+ before derivs
+ z= ( 0.85822890115074857     , -4.9444746892135116     )
+ dbsdtZ ( -61.805933615238814     , -11.098758584621281     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.875316325217987     , -10.712428596539931     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.872870825791232     , -10.711989610379943     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.939833485353255     , -10.325256189694255     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011440     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719332305     ,-1.19023714495458677E-015)
+ before derivs
+ z= ( 0.79635521091698014     , -4.9551868310782039     )
+ dbsdtZ ( -61.939835388548403     , -10.325245947241774     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.004383676810782     , -9.9380781613869189     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.001932876613346     , -9.9376697774297185     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.064056260750910     , -9.5501288403600508     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011560     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719331049     ,-1.22135916831578317E-014)
+ before derivs
+ z= ( 0.73435245679095551     , -4.9651246428557432     )
+ dbsdtZ ( -62.064058035768525     , -9.5501185748901580     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.123761807798232     , -9.1621734853851677     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.121306089763003     , -9.1617957674811485     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.178580482846641     , -8.7735078664389530     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011680     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719329798     ,-4.12395269842880108E-015)
+ before derivs
+ z= ( 0.67223032773866587     , -4.9742865703469201     )
+ dbsdtZ ( -62.178582129409108     , -8.7734975795555865     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.233432047635532     , -8.3848358019439218     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.230971795463510     , -8.3844888091520389     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.283388239508092     , -7.9955146132284218     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011797     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719328530     , 4.65095626941969265E-016)
+ before derivs
+ z= ( 0.60999853139614668     , -4.9826711805827495     )
+ dbsdtZ ( -62.283389757357831     , -7.9955043065388631     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.333377242614169     , -7.6061865683132019     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.330912840714667     , -7.6058703548917626     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.378463136778514     , -7.2162706403783110     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011906     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719327251     ,-5.28141983272001347E-015)
+ before derivs
+ z= ( 0.54766679255268103     , -4.9902771620483044     )
+ dbsdtZ ( -62.378464525678069     , -7.2162603154929341     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.423581758541495     , -6.8263474466068859     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.421113591972016     , -6.8260620620051107     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.463790301437648     , -6.4358977028979751     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012015     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719325967     ,-6.80049549658945374E-015)
+ before derivs
+ z= ( 0.48524485163132391     , -4.9971033248875738     )
+ dbsdtZ ( -62.463791561169714     , -6.4358873614299990     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.504031483182672     , -6.0454402847938429     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.501559937588752     , -6.0451857736441719     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.539356383324730     , -5.6545177321329900     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012121     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719324671     ,-1.84634208963418978E-015)
+ before derivs
+ z= ( 0.42274246316698438     , -5.0031486010893138     )
+ dbsdtZ ( -62.539357513692224     , -5.6545073756982305     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.574713828464915     , -5.2635870976602117     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.572239290019908     , -5.2633634997713692     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.605149557423800     , -4.8722528167144574     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012221     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719323352     ,-1.25364128800153907E-014)
+ before derivs
+ z= ( 0.36016939428230343     , -5.0084120446538600     )
+ dbsdtZ ( -62.605150558249747     , -4.8722424469310486     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.635617732443620     , -4.4809100477457200     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.633140587788269     , -4.4807173980965116     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.661159525710382     , -4.0892251834838094     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012317     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719322027     ,-5.85810696826505328E-015)
+ before derivs
+ z= ( 0.29753542316156611     , -5.0128928317408770     )
+ dbsdtZ ( -62.661160396838142     , -4.0892148019719947     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.686733661029997     , -3.6975314262570302     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.684254297212114     , -3.6973697549909210     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.707377518759934     , -3.3055571783962301     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012410     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719320703     , 5.15267082473735982E-016)
+ before derivs
+ z= ( 0.23485033752288575     , -5.0165902607980213     )
+ dbsdtZ ( -62.707378260053076     , -3.3055467867780655     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.728053609479964     , -2.9135736339611236     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.725572413893921     , -2.9134429663815546     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.743796297117221     , -2.5213712474055074     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012501     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719319350     ,-7.65029315938359211E-015)
+ before derivs
+ z= ( 0.17212393308889939     , -5.0195037526704995     )
+ dbsdtZ ( -62.743796908459679     , -2.5213608473046474     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.759571103644191     , -2.1291591620617005     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.757088463970462     , -2.1290595186281585     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.770410152426876     , -1.7367899173334507     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012588     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719317992     ,-1.48683149125972136E-014)
+ before derivs
+ z= ( 0.10936601205621342     , -5.0216328506915024     )
+ dbsdtZ ( -62.770410633722790     , -1.7367795103748591     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.781281200979031     , -1.3444105730615450     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.778797505123428     , -1.3443419693864096     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.787214908324465     ,-0.95193577672674612     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012670     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719316616     ,-9.15825575098505595E-016)
+ before derivs
+ z= ( 4.65863815638380557E-002, -5.0229772207535017     )
+ dbsdtZ ( -62.787215259498311     ,-0.95192536453646481     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.793180491317869     ,-0.55945048161388966     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.790696127351183     ,-0.55941292846001633     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.794207921088386     ,-0.16693145670432688     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012750     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719315229     , 1.57618059229425178E-014)
+ before derivs
+ z= (-1.62051478391494058E-002, -5.0235366513603994     )
+ dbsdtZ ( -62.794208142085047     ,-0.16692104090921162     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.795267097403574     , 0.22559846463422409     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.792782453500777     , 0.22560496135515226     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.791388080052428     , 0.61810038820180435     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012825     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719313831     ,-7.37756210289486347E-015)
+ before derivs
+ z= (-7.89987637264737558E-002, -5.0233110536605210     )
+ dbsdtZ ( -62.791388170837031     , 0.61811080597433643     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.787540675180935     ,  1.0106136042036884     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.785056139560609     ,  1.0105890434320544     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.778755807778445     ,  1.4030370992093140     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012896     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719312432     , 2.51805954559758405E-016)
+ before derivs
+ z= (-0.14178465332782353     , -5.0223004614604454     )
+ dbsdtZ ( -62.778755768336524     ,  1.4030475173315287     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.770002413849873     ,  1.7954722809470305     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.767518374713539     ,  1.7954166664754327     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.756313059989886     ,  2.1877560324487799     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012965     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719311017     ,-9.72588979838984180E-015)
+ before derivs
+ z= (-0.20455300506206575     , -5.0205050312196748     )
+ dbsdtZ ( -62.756312890327301     ,  2.1877664492928890     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.742655035679043     ,  2.5800518632112261     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.740171881150495     ,  2.5799652036838379     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.724063325265554     ,  2.9721345781244928     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013032     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719309584     , 1.31399882294380710E-015)
+ before derivs
+ z= (-0.26729401007027442     , -5.0179250420261399     )
+ dbsdtZ ( -62.724063025408476     ,  2.9721449920629244     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.705502795579832     ,  3.3642297629965507     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.703020913644529     ,  3.3641120719077566     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.682011624493924     ,  3.7560501796698813     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013090     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719308135     , 7.75529813978881322E-016)
+ before derivs
+ z= (-0.32999786374833295     , -5.0145608955525498     )
+ dbsdtZ ( -62.682011194488908     ,  3.7560605890754970     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.658551480441126     ,  4.1478834551084924     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.656071258885547     ,  4.1477347508007307     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.630164510088200     ,  4.5393803528944243     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013147     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719306685     ,-1.62191223992969036E-015)
+ before derivs
+ z= (-0.39265476727887139     , -5.0104131159935852     )
+ dbsdtZ ( -62.630163950002149     ,  4.5393907561408025     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.601808408224421     ,  4.9308904962997477     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.599330234575497     ,  4.9307108019606556     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.568530064961941     ,  5.3220027051191909     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013203     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719305230     ,-8.11265117584003548E-015)
+ before derivs
+ z= (-0.45525492916229870     , -5.0054823499839554     )
+ dbsdtZ ( -62.568529374882047     ,  5.3220131005808780     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.535282426820061     ,  5.7131285443992947     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.532806688284623     ,  5.7129178880580245     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.497117901265604     ,  6.1037949542979977     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013254     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719303752     ,-6.52754759966622800E-015)
+ before derivs
+ z= (-0.51778856674669149     , -4.9997693664973228     )
+ dbsdtZ ( -62.497117081299365     ,  6.1038053403507435     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.458983912664181     ,  6.4944753774256059     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.456510996068502     ,  6.4942337919484228     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.415939158884328     ,  6.8846349481210920     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013300     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719302263     ,-7.66731513349161453E-015)
+ before derivs
+ z= (-0.58024590775629969     , -4.9932750567261195     )
+ dbsdtZ ( -62.415938209159499     ,  6.8846453231421272     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.372924769117105     ,  7.2748089126808955     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.370455060846425     ,  7.2745364357660494     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.325006503696756     ,  7.6644006830985587     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013343     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719300757     ,-6.52798128053522220E-016)
+ before derivs
+ z= (-0.64261719181843024     , -4.9860004339422641     )
+ dbsdtZ ( -62.325005424361457     ,  7.6644110454668342     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.277118424602925     ,  8.0540072258235966     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.274652310541107     ,  8.0537038999953605     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.224334125595838     ,  8.4429703236203153     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013380     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719299250     , 7.61088241041374403E-015)
+ before derivs
+ z= (-0.70489267198847116     , -4.9779466333388100     )
+ dbsdtZ ( -62.224332916818376     ,  8.4429806717167466     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.171579830511156     ,  8.8319485699159657     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.169117695980397     ,  8.8316144425179921     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.113937736271239     ,  9.2202222209897879     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013418     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719297721     ,-3.50153933625918512E-015)
+ before derivs
+ z= (-0.76706261627281658     , -4.9691149118525475     )
+ dbsdtZ ( -62.113936398240185     ,  9.2202325531975422     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.056325458860108     ,  9.6085113944437914     )
+ finished derivs, deallocating
+ dbsdtZ ( -62.053867688560729     ,  9.6081465176316989     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.993834566754138     ,  9.9960349324283087     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013449     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719296181     , 1.16729542698479349E-014)
+ before derivs
+ z= (-0.82911730914945592     , -4.9595066479675847     )
+ dbsdtZ ( -61.993833099678177     ,  9.9960452471330257     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.931373299722964     ,  10.383574364305483     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.928920277673335     ,  10.383178795038665     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.864043364724580     ,  10.770287240047217     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013478     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719294629     ,-1.17938428120800687E-014)
+ before derivs
+ z= (-0.89104705308598842     , -4.9491233414999396     )
+ dbsdtZ ( -61.864041768832614     ,  10.770297535637257     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.796742858416636     ,  11.157016378767239     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.794294967893201     ,  11.156590178799974     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.724584391582020     ,  11.542858169784758     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013500     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719293066     , 1.00969579919230057E-014)
+ before derivs
+ z= (-0.95284217005482752     , -4.9379666133631801     )
+ dbsdtZ ( -61.724582667123066     ,  11.542868444651484     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.652455152453854     ,  11.928716590381658     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.650012775931188     ,  11.928259826253386     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.575479419279340     ,  12.313627010304787     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013520     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719291491     , 1.45857718264474912E-015)
+ before derivs
+ z= ( -1.0144930030453563     , -4.9260382053151428     )
+ dbsdtZ ( -61.575477566522522     ,  12.313637262842789     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.498532708259020     ,  12.698554423866547     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.496096227350108     ,  12.698067166891502     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.416751726920850     ,  13.082473331854343     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013540     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719289917     ,-6.72075242680314489E-015)
+ before derivs
+ z= ( -1.0759899175727998     , -4.9133399796857740     )
+ dbsdtZ ( -61.416749746155325     ,  13.082483560461712     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.334999557648381     ,  13.466409594941251     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.332569353045081     ,  13.465891921197283     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.248426097124813     ,  13.849277005077143     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013554     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719288319     ,-7.55146813136153838E-015)
+ before derivs
+ z= ( -1.1373233031835777     , -4.8998739190861382     )
+ dbsdtZ ( -61.248423988659724     ,  13.849287208155705     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.161881234075125     ,  14.232162129117377     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.159457685488547     ,  14.231614119434038     )
+ finished derivs, deallocating
+ dbsdtZ ( -61.070528812151323     ,  14.613918219780103     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013565     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719286716     ,-1.49454016870609330E-014)
+ before derivs
+ z= ( -1.1984835749569007     , -4.8856421260986318     )
+ dbsdtZ ( -61.070526576315721     ,  14.613928395735650     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.979204768639619     ,  14.995692380441012     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.976788254740939     ,  14.995114120386919     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.883087649795428     ,  15.376277503649806     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013571     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719285102     , 9.34929217377700184E-015)
+ before derivs
+ z= ( -1.2594611750023794     , -4.8706468229484585     )
+ dbsdtZ ( -60.883085286938353     ,  15.376287650892404     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.786998685865989     ,  15.756881050183610     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.784589584227227     ,  15.756272630053061     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.686131879047267     ,  16.136235740916280     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013576     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719283471     , 2.02203705168546577E-015)
+ before derivs
+ z= ( -1.3202465739534082     , -4.8548903511564117     )
+ dbsdtZ ( -60.686129389537527     ,  16.136245857860448     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.585292999245219     ,  16.515609205478516     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.582891686280213     ,  16.514970720277340     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.479692255518664     ,  16.893674190960841     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013576     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719281828     ,-3.44667870633141860E-016)
+ before derivs
+ z= ( -1.3808302724560926     , -4.8383751711730225     )
+ dbsdtZ ( -60.479689639744883     ,  16.893684276025844     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.374119206545600     ,  17.271758297900227     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.371726057451362     ,  17.271089847330959     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.263801016637885     ,  17.648474506865355     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013571     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719280174     , 1.92814514354822109E-015)
+ before derivs
+ z= ( -1.4412028026534887     , -4.8211038619941302     )
+ dbsdtZ ( -60.263798275008405     ,  17.648484558475428     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.153510284891610     ,  18.025210181983621     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.151125673589533     ,  18.024511870429887     )
+ finished derivs, deallocating
+ dbsdtZ ( -60.038491876612731     ,  18.400518753899878     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013565     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719278508     ,-1.36611642137518530E-014)
+ before derivs
+ z= ( -1.5013547296649192     , -4.8030791207579302     )
+ dbsdtZ ( -60.038489009555562     ,  18.400528770484510     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.923500685611302     ,  18.775847133680070     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.921124984688880     ,  18.775119070190282     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.803800021162942     ,  19.149689427945908     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013556     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719276837     , 6.36968776335233855E-016)
+ before derivs
+ z= ( -1.5612766530601390     , -4.7843037623235682     )
+ dbsdtZ ( -59.803797029125668     ,  19.149699407940023     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.684126328853715     ,  19.523551868747731     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.681759909506269     ,  19.522794167018024     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.559762102022724     ,  19.895869473852184     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013540     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719275137     , 2.59904944788225123E-015)
+ before derivs
+ z= ( -1.6209592083281170     , -4.7647807188313474     )
+ dbsdtZ ( -59.559758985472477     ,  19.895879415696438     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.435424597976649     ,  20.268207561073019     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.433067829949309     ,  20.267420339429464     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.306416231214449     ,  20.638942303720420     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013523     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719273449     ,-1.47885176327022805E-016)
+ before derivs
+ z= ( -1.6803930683402069     , -4.7445130392446107     )
+ dbsdtZ ( -59.306412990637824     ,  20.638952205861436     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.177434333705904     ,  21.009697860920479     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.175087585235971     ,  21.008881242300607     )
+ finished derivs, deallocating
+ dbsdtZ ( -59.043801975093977     ,  21.378791815117932     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013505     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719271749     , 8.92775436911463771E-015)
+ before derivs
+ z= ( -1.7395689448074760     , -4.7235038888733740     )
+ dbsdtZ ( -59.043798610996902     ,  21.378801676008528     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.910195828066954     ,  21.747906913108196     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.907859465826249     ,  21.747061025041781     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.771960348168825     ,  22.115302409214337     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013483     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719270027     , 7.33679610120940850E-016)
+ before derivs
+ z= ( -1.7984775897319680     , -4.7017565488797866     )
+ dbsdtZ ( -58.771956861076561     ,  22.115312227313765     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.633750818089688     ,  22.482719375105862     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.631425207127400     ,  22.481844349694970     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.490933806690386     ,  22.848359008839612     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013454     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719268299     ,-4.46604558890228986E-015)
+ before derivs
+ z= ( -1.8571097968516681     , -4.6792744157654944     )
+ dbsdtZ ( -58.490930197147364     ,  22.848368782613807     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.348142479287809     ,  23.214020435052756     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.345827982973297     ,  23.213116408951102     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.200766242020549     ,  23.577847076460532     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013425     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719266554     , 3.35213627689068261E-015)
+ before derivs
+ z= ( -1.9154564030789498     , -4.6560610008409808     )
+ dbsdtZ ( -58.200762510590380     ,  23.577856804382385     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.053415418913019     ,  23.941695829692758     )
+ finished derivs, deallocating
+ dbsdtZ ( -58.051112398879212     ,  23.940762944084351     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.901502973774456     ,  24.303652632072897     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013392     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719264809     ,-4.34450652536666482E-015)
+ before derivs
+ z= ( -1.9735082899322747     , -4.6321199296769793     )
+ dbsdtZ ( -57.901499121039777     ,  24.303662312622432     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.749615668985982     ,  24.665631862223595     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.747324485072809     ,  24.664670262800680     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.593190742739978     ,  25.025662271006464     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013356     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719263047     ,-1.10906292830059705E-014)
+ before derivs
+ z= ( -2.0312563849609244     , -4.6074549415380330     )
+ dbsdtZ ( -57.593186769302328     ,  25.025671902671093     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.436790679104490     ,  25.385715420057661     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.434511689302695     ,  25.384725256997935     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.275877703575119     ,  25.743763181640045     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013318     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719261285     , 4.75097391983148043E-015)
+ before derivs
+ z= ( -2.0886916631625398     , -4.5820698887982960     )
+ dbsdtZ ( -57.275873610054973     ,  25.743772762914855     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.114989309030300     ,  26.101833992491397     )
+ finished derivs, deallocating
+ dbsdtZ ( -57.112722869425468     ,  26.100815420434564     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.949613417284866     ,  26.457843163024020     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013278     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719259500     , 1.71666066778319859E-014)
+ before derivs
+ z= ( -2.1458051483932485     , -4.5559687363396639     )
+ dbsdtZ ( -56.949609204321405     ,  26.457852692411944     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.784261821055509     ,  26.813875688280731     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.782008285772527     ,  26.812828866304333     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.614448843478016     ,  27.167790642407276     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013234     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719257703     ,-7.44955312714790097E-016)
+ before derivs
+ z= ( -2.2025879147701577     , -4.5291555609323320     )
+ dbsdtZ ( -56.614444511729062     ,  27.167800118419329     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.444659872150162     ,  27.521729253119762     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.442419593297842     ,  27.520654344714291     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.270436332405623     ,  27.873494692666036     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013187     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719255913     , 2.03960112687973094E-015)
+ before derivs
+ z= ( -2.2590310880659961     , -4.5016345505978732     )
+ dbsdtZ ( -56.270431882547612     ,  27.873504113821614     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.096236505891618     ,  28.225284087019705     )
+ finished derivs, deallocating
+ dbsdtZ ( -56.094009833507691     ,  28.224181260063123     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.917629616782392     ,  28.574845049631939     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013136     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719254100     ,-1.67053870736566523E-015)
+ before derivs
+ z= ( -2.3151258470956844     , -4.4734100039549363     )
+ dbsdtZ ( -55.917625049510157     ,  28.574854414458994     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.739046144177607     ,  28.924430261585911     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.736833426174080     ,  28.923299688317375     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.556083803391843     ,  29.271732129316362     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013085     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719252281     ,-9.06046071502686345E-015)
+ before derivs
+ z= ( -2.3708634250946186     , -4.4444863295476722     )
+ dbsdtZ ( -55.556079119418591     ,  29.271741436351626     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.373144578723831     ,  29.619058537189769     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.370946160832631     ,  29.617900394182715     )
+ finished derivs, deallocating
+ dbsdtZ ( -55.185855364477042     ,  29.964047045028572     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000013030     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719250467     , 1.81647231978221413E-015)
+ before derivs
+ z= ( -2.4262351110884532     , -4.4148680451569851     )
+ dbsdtZ ( -55.185850564534221     ,  29.964056292817826     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.998588962347661     ,  30.309060380032982     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.996405188066575     ,  30.307874848167589     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.807002128917944     ,  30.651681624384981     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012974     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719248637     ,-8.82714040750798290E-015)
+ before derivs
+ z= ( -2.4812322512541667     , -4.3845597770947178     )
+ dbsdtZ ( -54.806997213755068     ,  30.651690811483242     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.615437800039082     ,  30.994327979101751     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.613269010578158     ,  30.993115243536625     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.419583273196764     ,  31.334528426206703     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012916     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719246807     ,-3.68563686514722377E-015)
+ before derivs
+ z= ( -2.5358462502721979     , -4.3535662594808899     )
+ dbsdtZ ( -54.419578243581412     ,  31.334537551178492     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.223750939820640     ,  31.674754263007877     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.221597474048849     ,  31.673514513151176     )
+ finished derivs, deallocating
+ dbsdtZ ( -54.023659312153029     ,  32.012480757303052     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012854     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719244953     , 1.37125553967276659E-014)
+ before derivs
+ z= ( -2.5900685726694435     , -4.3218923335040902     )
+ dbsdtZ ( -54.023654168870571     ,  32.012489818722557     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.823589563397327     ,  32.350232916714440     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.821451757789674     ,  32.348966346194253     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.619292089529225     ,  32.685432689137969     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012788     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719243095     ,-2.56522234010070349E-016)
+ before derivs
+ z= ( -2.6438907441529058     , -4.2895429466651436     )
+ dbsdtZ ( -53.619286833382859     ,  32.685441685589339     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.415016176598371     ,  33.020658398143254     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.412894365183341     ,  33.019365204777422     )
+ finished derivs, deallocating
+ dbsdtZ ( -53.206544768309342     ,  33.353279074377333     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012723     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719241236     , 2.55026035012040353E-015)
+ before derivs
+ z= ( -2.6973043529337817     , -4.2565231520041760     )
+ dbsdtZ ( -53.206539400119887     ,  33.353288004454839     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.998094599612131     ,  33.685925954661727     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.995989113919372     ,  33.684606340426846     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.785481820850833     ,  34.015915563313911     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012654     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719239366     ,-1.31097389888257254E-014)
+ before derivs
+ z= ( -2.7503010510417871     , -4.2228381073111851     )
+ dbsdtZ ( -52.785476341456608     ,  34.015924425622217     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.572889957015398     ,  34.345931639446235     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.570801126024165     ,  34.344585810446191     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.356169018812402     ,  34.673238620167993     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012583     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719237490     , 1.84333884961640493E-014)
+ before derivs
+ z= ( -2.8028725556295120     , -4.1884930743202560     )
+ dbsdtZ ( -52.356163429069078     ,  34.673247413322329     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.139468667599452     ,  35.000572327719780     )
+ finished derivs, deallocating
+ dbsdtZ ( -52.137396817686991     ,  34.999200494153534     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.918673422878641     ,  35.325145539260788     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012510     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719235608     , 1.11907011435263826E-014)
+ before derivs
+ z= ( -2.8550106502665988     , -4.1534934178875345     )
+ dbsdtZ ( -51.918667723659134     ,  35.325154261887192     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.697898433993437     ,  35.649745732861206     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.695843888884120     ,  35.648348108989936     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.473063372283342     ,  35.971534461058170     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012437     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719233716     ,-1.97704266152731734E-014)
+ before derivs
+ z= ( -2.9067071862235485     , -4.1178446051530928     )
+ dbsdtZ ( -51.473057564477664     ,  35.971543111793686     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.248248232087533     ,  36.293350422383504     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.246211312802281     ,  36.291927226497201     )
+ finished derivs, deallocating
+ dbsdtZ ( -51.019408474133151     ,  36.612304388082329     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012361     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719231828     ,-5.41645721330308305E-015)
+ before derivs
+ z= ( -2.9579540837449469     , -4.0815522046868198     )
+ dbsdtZ ( -51.019402558648309     ,  36.612312965575256     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.790588300257085     ,  36.931285833778830     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.788569325063193     ,  36.929837288162148     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.557779592533080     ,  37.247355200688794     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012284     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719229918     , 1.70855083553300702E-014)
+ before derivs
+ z= ( -3.0087433333119171     , -4.0446218856184624     )
+ dbsdtZ ( -50.557773570292881     ,  37.247363703598843     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.324990128389473     ,  37.563452290227453     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.322989412750928     ,  37.561978621125057     )
+ finished derivs, deallocating
+ dbsdtZ ( -50.088248837515728     ,  37.876587672706300     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012204     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719228014     ,-5.84515075230385150E-015)
+ before derivs
+ z= ( -3.0590669968935988     , -4.0070594167519609     )
+ dbsdtZ ( -50.088242709460630     ,  37.876596099704848     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.851526446715681     ,  38.189751016168671     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.849544303243839     ,  38.188252453749868     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.610889553775777     ,  38.499903486937257     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012124     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719226110     , 6.08887940067859290E-016)
+ before derivs
+ z= ( -3.1089172091874580     , -3.9688706656642143     )
+ dbsdtZ ( -49.610883320862818     ,  38.499911836707533     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.370271214447833     ,  38.810084152730724     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.368307952852597     ,  38.808560931053506     )
+ finished derivs, deallocating
+ dbsdtZ ( -49.125776309211787     ,  39.117205250516143     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000012039     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719224189     ,-5.95725725693885266E-015)
+ before derivs
+ z= ( -3.1582861788482370     , -3.9300615977884155     )
+ dbsdtZ ( -49.125769972414339     ,  39.117213521753428     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.881299608224936     ,  39.424354773017704     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.879355535266413     ,  39.422807129992258     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.632984883276691     ,  39.728396510123659     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011955     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719222262     , 1.17527515497428681E-015)
+ before derivs
+ z= ( -3.2071661897053492     , -3.8906382754820994     )
+ dbsdtZ ( -48.632978443584378     ,  39.728404701535517     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.384688010368471     ,  40.032466897251005     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.382763429809017     ,  40.030895074602498     )
+ finished derivs, deallocating
+ dbsdtZ ( -48.132592255139230     ,  40.333381767054114     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011871     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719220335     , 1.12073978569826593E-014)
+ before derivs
+ z= ( -3.2555496019685290     , -3.8506068570800500     )
+ dbsdtZ ( -48.132585713557752     ,  40.333389877360581     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.880513996949453     ,  40.634325507762654     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.878609209506230     ,  40.632729750993569     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.624676591657838     ,  40.932066492133842     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011784     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719218408     ,-1.82889727667889801E-014)
+ before derivs
+ z= ( -3.3034288534215501     , -3.8099735959322154     )
+ dbsdtZ ( -47.624669949208808     ,  40.932074520067601     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.368856325669199     ,  41.229836563838695     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.366971628967171     ,  41.228217122190394     )
+ finished derivs, deallocating
+ dbsdtZ ( -47.109317235169058     ,  41.524357140488078     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011697     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719216481     ,-1.07559360723596953E-014)
+ before derivs
+ z= ( -3.3507964606038252     , -3.7687448394267800     )
+ dbsdtZ ( -47.109310492889854     ,  41.524365084794695     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.849794923555372     ,  41.818907016409753     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.847930612080845     ,  41.817264142823632     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.586594691092301     ,  42.110161166154313     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011608     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719214531     ,-6.77756462064138532E-015)
+ before derivs
+ z= ( -3.3976450199797008     , -3.7269270279985438     )
+ dbsdtZ ( -46.586587850035869     ,  42.110169025592413     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.323410874475449     ,  42.401444822587059     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.321567239530040     ,  42.399778773665034     )
+ finished derivs, deallocating
+ dbsdtZ ( -46.056590615352931     ,  42.689387036539614     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011520     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719212598     ,-2.41610117329704721E-014)
+ before derivs
+ z= ( -3.4439672090952675     , -3.6845266941227712     )
+ dbsdtZ ( -46.056583676587685     ,  42.689394809881080     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.789786406469361     ,  42.977358960041045     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.787963736124546     ,  42.975669996005507     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.519387801625612     ,  43.261944246719693     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011426     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719210643     , 1.85246783190873288E-015)
+ before derivs
+ z= ( -3.4897557877225012     , -3.6415504612946554     )
+ dbsdtZ ( -45.519380766235201     ,  43.261951932749845     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.249004878903605     ,  43.546559441220971     )
+ finished derivs, deallocating
+ dbsdtZ ( -45.247203457955663     ,  43.544847825874150     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.975070168399910     ,  43.827743333577622     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011335     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719208699     , 1.17011435263325581E-014)
+ before derivs
+ z= ( -3.5350035989905599     , -3.5980050429945694     )
+ dbsdtZ ( -44.975063037483089     ,  43.827750931095409     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.701150769448333     ,  44.108957327412675     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.699370879373873     ,  44.107223328095451     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.423722745870180     ,  44.386695889779730     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011242     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719206738     , 1.20996962449382295E-015)
+ before derivs
+ z= ( -3.5797035705040594     , -3.5538972416392540     )
+ dbsdtZ ( -44.423715520540611     ,  44.386703397597948     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.146309660879972     ,  44.664464742632767     )
+ finished derivs, deallocating
+ dbsdtZ ( -44.144551579791937     ,  44.662708630182877     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.865431662651730     ,  44.938714577586858     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011147     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719204794     ,-3.62947519261247464E-015)
+ before derivs
+ z= ( -3.6238487154481489     , -3.5092339475191179     )
+ dbsdtZ ( -43.865424344037869     ,  44.938721994532322     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.584568227711067     ,  45.212994887356771     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.582832230315326     ,  45.211216936066620     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.300284132325586     ,  45.483713142498559     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000011056     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719202833     ,-8.53917631049583292E-015)
+ before derivs
+ z= ( -3.6674321336802183     , -3.4640221377218050     )
+ dbsdtZ ( -43.300276721570420     ,  45.483720467412262     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.016014222649652     ,  45.754462052079340     )
+ finished derivs, deallocating
+ dbsdtZ ( -43.014300580202068     ,  45.752662539653159     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.728368439813451     ,  46.021606426728077     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010960     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719200871     , 2.54483933925797601E-015)
+ before derivs
+ z= ( -3.7104470128080660     , -3.4182688750422043     )
+ dbsdtZ ( -42.728360938074374     ,  46.021613658465377     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.440736462890115     ,  46.288781630704278     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.439045443154150     ,  46.286960838214682     )
+ finished derivs, deallocating
+ dbsdtZ ( -42.149773927585521     ,  46.552310382506263     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010867     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719198922     , 1.35625018160556721E-014)
+ before derivs
+ z= ( -3.7528866292543572     , -3.3719813068790696     )
+ dbsdtZ ( -42.149766336034162     ,  46.552317519937120     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.858824816237828     ,  46.815870133762168     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.857156683442760     ,  46.814028345606381     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.564590981703070     ,  47.075742085212177     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010771     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719196955     , 1.68376597386998839E-015)
+ before derivs
+ z= ( -3.7947443493072068     , -3.3251666641184219     )
+ dbsdtZ ( -41.564583301525033     ,  47.075749127221194     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.270370187069545     ,  47.335645201453836     )
+ finished derivs, deallocating
+ dbsdtZ ( -41.268725201869131     ,  47.333782705309254     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.972911017697797     ,  47.591819746328170     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010676     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719194994     , 1.67114586058225711E-014)
+ before derivs
+ z= ( -3.8360136301567236     , -3.2778322600039091     )
+ dbsdtZ ( -40.972903250092600     ,  47.591826691814937     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.675464502132009     ,  47.848025616517390     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.673842921563775     ,  47.846142703296664     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.374826466290664     ,  48.100462726217920     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010580     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719193033     , 1.46482218715826562E-014)
+ before derivs
+ z= ( -3.8766880209173529     , -3.2299854889942989     )
+ dbsdtZ ( -40.374818612471451     ,  48.100469574097076     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.074200696180689     ,  48.352931316916930     )
+ finished derivs, deallocating
+ dbsdtZ ( -40.072602773625782     ,  48.351028280722524     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.770430758951839     ,  48.601591546724876     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010483     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719191077     , 9.15760522968156465E-015)
+ before derivs
+ z= ( -3.9167611636358588     , -3.1816338256082823     )
+ dbsdtZ ( -39.770422820145221     ,  48.601598295926266     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.466672697461057     ,  48.850283408350869     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.465098682604697     ,  48.848360546429220     )
+ finished derivs, deallocating
+ dbsdtZ ( -39.159818313304427     ,  49.095127903589400     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010387     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719189116     , 8.48214727622309539E-015)
+ before derivs
+ z= ( -3.9562267942847891     , -3.1327848232567699     )
+ dbsdtZ ( -39.159810290750286     ,  49.095134553058344     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.852975413034784     ,  49.340004176577999     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.851425551827170     ,  49.338061789273048     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.543084518374116     ,  49.580994678682828     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010294     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719187155     ,-6.66892756295833777E-015)
+ before derivs
+ z= ( -3.9950787437412636     , -3.0834461130628625     )
+ dbsdtZ ( -38.543076413325444     ,  49.581001227380199     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.233204713952802     ,  49.822017099559339     )
+ finished derivs, deallocating
+ dbsdtZ ( -38.231679248570778     ,  49.820055490265680     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.920325719687007     ,  50.059115952056175     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010196     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719185188     , 2.29200339263435637E-016)
+ before derivs
+ z= ( -4.0333109387509403     , -3.0336254026696814     )
+ dbsdtZ ( -37.920317533409680     ,  50.059122398958586     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.607457420277868     ,  50.296246859413827     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.605956589087043     ,  50.294266334529361     )
+ finished derivs, deallocating
+ dbsdtZ ( -37.291639204218093     ,  50.529417013801925     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010101     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719183227     ,-5.96462983171175409E-015)
+ before derivs
+ z= ( -4.0709174028769999     , -2.9833304750362402     )
+ dbsdtZ ( -37.291630937990668     ,  50.529423357901884     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.975831285958975     ,  50.762619354186199     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.974355323476431     ,  50.760620223064251     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.657123185192560     ,  50.991824375726857     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000010005     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719181266     ,-1.87783816274489368E-015)
+ before derivs
+ z= ( -4.1078922574340089     , -2.9325691872215520     )
+ dbsdtZ ( -36.657114840306072     ,  50.991830616032942     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.338424983559527     ,  51.221061709424752     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.336974120417260     ,  51.219044284325832     )
+ finished derivs, deallocating
+ dbsdtZ ( -36.016876786742365     ,  51.446265782834203     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009910     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719179299     , 1.23080799024899434E-014)
+ before derivs
+ z= ( -4.1442297224065090     , -2.8813494691571573     )
+ dbsdtZ ( -36.016868364500148     ,  51.446271918371167     )
+ finished derivs, deallocating
+ dbsdtZ ( -35.695338088842313     ,  51.671502289567911     )
+ finished derivs, deallocating
+ dbsdtZ ( -35.693912551751161     ,  51.669466885610916     )
+ finished derivs, deallocating
+ dbsdtZ ( -35.371000028420532     ,  51.892670224613234     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009814     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719177333     ,-6.92393191392692842E-015)
+ before derivs
+ z= ( -4.1799241173521935     , -2.8296793224082668     )
+ dbsdtZ ( -35.370991530138049     ,  51.892676254422270     )
+ finished derivs, deallocating
+ dbsdtZ ( -35.046671065213161     ,  52.113870709136918     )
+ finished derivs, deallocating
+ dbsdtZ ( -35.045271076927392     ,  52.111817644250010     )
+ finished derivs, deallocating
+ dbsdtZ ( -34.719593809575599     ,  52.330967946134763     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009723     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719175389     ,-1.99493199737332816E-015)
+ before derivs
+ z= ( -4.2149698622895260     , -2.7775668189237117     )
+ dbsdtZ ( -34.719585236580151     ,  52.330973869273549     )
+ finished derivs, deallocating
+ dbsdtZ ( -34.392525248026026     ,  52.548097843733892     )
+ finished derivs, deallocating
+ dbsdtZ ( -34.391151027308496     ,  52.546027438604781     )
+ finished derivs, deallocating
+ dbsdtZ ( -34.062759893588442     ,  52.761090458950392     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009630     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719173427     , 7.78088531105947112E-015)
+ before derivs
+ z= ( -4.2493614785696652     , -2.7250200997748948     )
+ dbsdtZ ( -34.062751247218984     ,  52.761096274493219     )
+ finished derivs, deallocating
+ dbsdtZ ( -33.733002828751680     ,  52.974115840842558     )
+ finished derivs, deallocating
+ dbsdtZ ( -33.731654590339673     ,  52.972028418868511     )
+ finished derivs, deallocating
+ dbsdtZ ( -33.400600891974136     ,  53.182970551794213     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009535     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719171472     ,-1.03862231315421383E-014)
+ before derivs
+ z= ( -4.2830935897325615     , -2.6720473738839430     )
+ dbsdtZ ( -33.400592173581138     ,  53.182976258832220     )
+ finished derivs, deallocating
+ dbsdtZ ( -33.068206839012753     ,  53.391858130430755     )
+ finished derivs, deallocating
+ dbsdtZ ( -33.066884793584485     ,  53.389754017668167     )
+ finished derivs, deallocating
+ dbsdtZ ( -32.733220248351472     ,  53.596542301085165     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009444     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719169517     , 7.91120641219222875E-015)
+ before derivs
+ z= ( -4.3161609223470823     , -2.6186569167412572     )
+ dbsdtZ ( -32.733211459296626     ,  53.596547898726413     )
+ finished derivs, deallocating
+ dbsdtZ ( -32.398241134487527     ,  53.801259435352705     )
+ finished derivs, deallocating
+ dbsdtZ ( -32.396945488629129     ,  53.799138960466003     )
+ finished derivs, deallocating
+ dbsdtZ ( -32.060722222282159     ,  54.001741081228275     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009353     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719167573     ,-2.70291601600636255E-015)
+ before derivs
+ z= ( -4.3485583068350513     , -2.5648570691126586     )
+ dbsdtZ ( -32.060713363938213     ,  54.001746568597952     )
+ finished derivs, deallocating
+ dbsdtZ ( -31.723210378684787     ,  54.202255781549276     )
+ finished derivs, deallocating
+ dbsdtZ ( -31.721941334858045     ,  54.200119275759818     )
+ finished derivs, deallocating
+ dbsdtZ ( -31.383211872982745     ,  54.398503574713359     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009264     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719165640     ,-6.33369225122581980E-015)
+ before derivs
+ z= ( -4.3802806782790524     , -2.5106562357363371     )
+ dbsdtZ ( -31.383202946733277     ,  54.398508950953897     )
+ finished derivs, deallocating
+ dbsdtZ ( -31.043220026592572     ,  54.594784508045031     )
+ finished derivs, deallocating
+ dbsdtZ ( -31.041977783103373     ,  54.592632305079334     )
+ finished derivs, deallocating
+ dbsdtZ ( -30.700795042911494     ,  54.786767782009626     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009175     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719163690     , 7.56686380221083255E-015)
+ before derivs
+ z= ( -4.4113230772138916     , -2.4560628840098016     )
+ dbsdtZ ( -30.700786050150686     ,  54.786773046280729     )
+ finished derivs, deallocating
+ dbsdtZ ( -30.358376308203301     ,  54.978784276740264     )
+ finished derivs, deallocating
+ dbsdtZ ( -30.357161059170533     ,  54.976616712777840     )
+ finished derivs, deallocating
+ dbsdtZ ( -30.013578341232829     ,  55.166473031254178     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009086     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719161757     ,-6.67283069077928559E-015)
+ before derivs
+ z= ( -4.4416806504015804     , -2.4010855426670399     )
+ dbsdtZ ( -30.013569283365261     ,  55.166478182733130     )
+ finished derivs, deallocating
+ dbsdtZ ( -29.668786211917570     ,  55.354195081996444     )
+ finished derivs, deallocating
+ dbsdtZ ( -29.667598147242860     ,  55.352012495617416     )
+ finished derivs, deallocating
+ dbsdtZ ( -29.321669127162089     ,  55.537559987733808     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000009002     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719159830     ,-2.56478865923170929E-015)
+ before derivs
+ z= ( -4.4713486515897216     , -2.3457328004460907     )
+ dbsdtZ ( -29.321660005602524     ,  55.537565025615464     )
+ finished derivs, deallocating
+ dbsdtZ ( -28.974557467829666     ,  55.720958260013752     )
+ finished derivs, deallocating
+ dbsdtZ ( -28.973396773167668     ,  55.718760992145974     )
+ finished derivs, deallocating
+ dbsdtZ ( -28.625175493192923     ,  55.899970663157589     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008915     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719157898     ,-1.19793498037923385E-014)
+ before derivs
+ z= ( -4.5003224422531867     , -2.2900133047472417     )
+ dbsdtZ ( -28.625166309366037     ,  55.899975586654527     )
+ finished derivs, deallocating
+ dbsdtZ ( -28.275798530896992     ,  56.079016497999120     )
+ finished derivs, deallocating
+ dbsdtZ ( -28.274665387626381     ,  56.076804891864903     )
+ finished derivs, deallocating
+ dbsdtZ ( -27.924206248210119     ,  56.253648424719429     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008831     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719155971     , 5.81132364452230377E-016)
+ before derivs
+ z= ( -4.5285974923189576     , -2.2339357602820580     )
+ dbsdtZ ( -27.924197003550379     ,  56.253653233062181     )
+ finished derivs, deallocating
+ dbsdtZ ( -27.572618563996347     ,  56.428313843123391     )
+ finished derivs, deallocating
+ dbsdtZ ( -27.571513149191453     ,  56.426088244185976     )
+ finished derivs, deallocating
+ dbsdtZ ( -27.218870900490625     ,  56.598538003949315     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008744     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719154044     , 1.04189660371512005E-014)
+ before derivs
+ z= ( -4.5561693808740271     , -2.1775089277134527     )
+ dbsdtZ ( -27.218861596441954     ,  56.598542696386282     )
+ finished derivs, deallocating
+ dbsdtZ ( -26.865127420869417     ,  56.768795711266115     )
+ finished derivs, deallocating
+ dbsdtZ ( -26.864049907272630     ,  56.766556467175789     )
+ finished derivs, deallocating
+ dbsdtZ ( -26.509279640595008     ,  56.934585505351009     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008662     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719152123     ,-3.42456098201271431E-015)
+ before derivs
+ z= ( -4.5830337968562471     , -2.1207416222870159     )
+ dbsdtZ ( -26.509270278610661     ,  56.934590081148798     )
+ finished derivs, deallocating
+ dbsdtZ ( -26.153435628960445     ,  57.100408895546785     )
+ finished derivs, deallocating
+ dbsdtZ ( -26.152386184955105     ,  57.098156356086520     )
+ finished derivs, deallocating
+ dbsdtZ ( -25.795543324152515     ,  57.261738414825999     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008584     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719150224     , 1.64408417435701892E-015)
+ before derivs
+ z= ( -4.6091865397280127     , -2.0636427124538090     )
+ dbsdtZ ( -25.795533905694757     ,  57.261742873269426     )
+ finished derivs, deallocating
+ dbsdtZ ( -25.437654372148518     ,  57.423101574641052     )
+ finished derivs, deallocating
+ dbsdtZ ( -25.436633161732669     ,  57.420836091671930     )
+ finished derivs, deallocating
+ dbsdtZ ( -25.077773454541969     ,  57.579945607881420     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008507     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719148314     , 3.49720252756924310E-015)
+ before derivs
+ z= ( -4.6346235201326795     , -2.0062211184848464     )
+ dbsdtZ ( -25.077763981081908     ,  57.579949948273573     )
+ finished derivs, deallocating
+ dbsdtZ ( -24.717895473377219     ,  57.736823320880589     )
+ finished derivs, deallocating
+ dbsdtZ ( -24.716902656137957     ,  57.734545248286899     )
+ finished derivs, deallocating
+ dbsdtZ ( -24.356082165471616     ,  57.889157357621180     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008429     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719146415     ,-4.64884207518334591E-015)
+ before derivs
+ z= ( -4.6593407605336106     , -1.9484858110774748     )
+ dbsdtZ ( -24.356072638488957     ,  57.889161579283623     )
+ finished derivs, deallocating
+ dbsdtZ ( -23.994271377184475     ,  58.041525108135367     )
+ finished derivs, deallocating
+ dbsdtZ ( -23.993307108273001     ,  58.039234801769332     )
+ finished derivs, deallocating
+ dbsdtZ ( -23.630582203460328     ,  58.189325342518906     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008353     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719144523     , 6.78406983367629834E-015)
+ before derivs
+ z= ( -4.6833343958357547     , -1.8904458099538728     )
+ dbsdtZ ( -23.630572624443147     ,  58.189329444791760     )
+ finished derivs, deallocating
+ dbsdtZ ( -23.266895132135222     ,  58.337159319477337     )
+ finished derivs, deallocating
+ dbsdtZ ( -23.265959562242593     ,  58.334857137103597     )
+ finished derivs, deallocating
+ dbsdtZ ( -22.901386910223014     ,  58.480402653971531     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008278     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719142630     , 1.31136421166466732E-014)
+ before derivs
+ z= ( -4.7066006739896586     , -1.8321101824518853     )
+ dbsdtZ ( -22.901377280667521     ,  58.480406636213552     )
+ finished derivs, deallocating
+ dbsdtZ ( -22.535880373159571     ,  58.623679754623893     )
+ finished derivs, deallocating
+ dbsdtZ ( -22.534973648493132     ,  58.621366055863575     )
+ finished derivs, deallocating
+ dbsdtZ ( -22.168610204963070     ,  58.762343803632184     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008207     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719140748     , 5.30174862345411668E-015)
+ before derivs
+ z= ( -4.7291359565778146     , -1.7734880421084152     )
+ dbsdtZ ( -22.168600526373378     ,  58.762347665220915     )
+ finished derivs, deallocating
+ dbsdtZ ( -21.801341303799411     ,  58.901041637160219     )
+ finished derivs, deallocating
+ dbsdtZ ( -21.800463566059960     ,  58.898716783434899     )
+ finished derivs, deallocating
+ dbsdtZ ( -21.432366566574480     ,  59.035104730521567     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008138     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719138867     , 9.99200722162640886E-016)
+ before derivs
+ z= ( -4.7509367193832590     , -1.7145885472355931     )
+ dbsdtZ ( -21.432356840462351     ,  59.035108470853324     )
+ finished derivs, deallocating
+ dbsdtZ ( -21.063392678366075     ,  59.169201621539521     )
+ finished derivs, deallocating
+ dbsdtZ ( -21.062544064725675     ,  59.166865976014734     )
+ finished derivs, deallocating
+ dbsdtZ ( -20.692771015756385     ,  59.298642807916181     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008069     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719136991     ,-3.41306843898436796E-016)
+ before derivs
+ z= ( -4.7719995529403256     , -1.6554208994899466     )
+ dbsdtZ ( -20.692761243641026     ,  59.298646426406300     )
+ finished derivs, deallocating
+ dbsdtZ ( -20.322149784011863     ,  59.428117799859642     )
+ finished derivs, deallocating
+ dbsdtZ ( -20.321330427092477     ,  59.425771727388202     )
+ finished derivs, deallocating
+ dbsdtZ ( -19.949939097043089     ,  59.552916850013020     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000008005     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719135132     , 6.43951038326040504E-015)
+ before derivs
+ z= ( -4.7923211630674745     , -1.5959943424347942     )
+ dbsdtZ ( -19.949929280450895     ,  59.552920346095824     )
+ finished derivs, deallocating
+ dbsdtZ ( -19.577728422718373     ,  59.677749708415391     )
+ finished derivs, deallocating
+ dbsdtZ ( -19.576938450571014     ,  59.675393575480420     )
+ finished derivs, deallocating
+ dbsdtZ ( -19.203986860751986     ,  59.797887118368955     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007936     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719133256     ,-1.18243088931269114E-014)
+ before derivs
+ z= ( -4.8118983713821049     , -1.5363181600960849     )
+ dbsdtZ ( -19.203977001216298     ,  59.797890491497888     )
+ finished derivs, deallocating
+ dbsdtZ ( -18.830244893204192     ,  59.918058334025339     )
+ finished derivs, deallocating
+ dbsdtZ ( -18.829484429288982     ,  59.915692508683037     )
+ finished derivs, deallocating
+ dbsdtZ ( -18.455030844852566     ,  60.033515328114454     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007876     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719131414     ,-4.04017097554998372E-015)
+ before derivs
+ z= ( -4.8307281157972808     , -1.4764016755119134     )
+ dbsdtZ ( -18.455020943913453     ,  60.033518577762209     )
+ finished derivs, deallocating
+ dbsdtZ ( -18.079815972755004     ,  60.149006120132121     )
+ finished derivs, deallocating
+ dbsdtZ ( -18.079085135921858     ,  60.146630971954366     )
+ finished derivs, deallocating
+ dbsdtZ ( -17.703188056759004     ,  60.259764653940081     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007814     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719129556     , 7.85753840465419628E-015)
+ before derivs
+ z= ( -4.8488074510002850     , -1.4162542492759342     )
+ dbsdtZ ( -17.703178115963009     ,  60.259767779598597     )
+ finished derivs, deallocating
+ dbsdtZ ( -17.326558898978863     ,  60.370556972675473     )
+ finished derivs, deallocating
+ dbsdtZ ( -17.325857803448876     ,  60.368172872692043     )
+ finished derivs, deallocating
+ dbsdtZ ( -16.948575955049535     ,  60.476599735855352     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007756     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719127720     ,-7.34069922903035632E-015)
+ before derivs
+ z= ( -4.8661335489129298     , -1.3558852780749027     )
+ dbsdtZ ( -16.948565975949425     ,  60.476602737035982     )
+ finished derivs, deallocating
+ dbsdtZ ( -16.570591351489462     ,  60.582676265736715     )
+ finished derivs, deallocating
+ dbsdtZ ( -16.569920106837063     ,  60.580283586377405     )
+ finished derivs, deallocating
+ dbsdtZ ( -16.191312431115076     ,  60.683986684718697     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007701     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719125889     , 4.40630604919833857E-015)
+ before derivs
+ z= ( -4.8827036991335495     , -1.2953041932205722     )
+ dbsdtZ ( -16.191302415269622     ,  60.683989560952213     )
+ finished derivs, deallocating
+ dbsdtZ ( -15.812031433520247     ,  60.785330846954146     )
+ finished derivs, deallocating
+ dbsdtZ ( -15.811390144656079     ,  60.782929961990618     )
+ finished derivs, deallocating
+ dbsdtZ ( -15.431515790740294     ,  60.881893087537748     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007647     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719124059     , 9.18861341181465008E-016)
+ before derivs
+ z= ( -4.8985153093606097     , -1.2345204591761756     )
+ dbsdtZ ( -15.431505739713996     ,  60.881895838374440     )
+ finished derivs, deallocating
+ dbsdtZ ( -15.050997653472338     ,  60.978489042708418     )
+ finished derivs, deallocating
+ dbsdtZ ( -15.050386420626817     ,  60.976080327195774     )
+ finished derivs, deallocating
+ dbsdtZ ( -14.669304735619800     ,  61.070288012539244     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007596     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719122246     , 2.76124609288608269E-015)
+ before derivs
+ z= ( -4.9135659057978653     , -1.1735435720777219     )
+ dbsdtZ ( -14.669294650982664     ,  61.070290637548993     )
+ finished derivs, deallocating
+ dbsdtZ ( -14.287608906399024     ,  61.162120663076784     )
+ finished derivs, deallocating
+ dbsdtZ ( -14.287027825106700     ,  61.159704493295123     )
+ finished derivs, deallocating
+ dbsdtZ ( -13.904798344812416     ,  61.249142014007553     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007547     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719120427     ,-1.62597799807651100E-015)
+ before derivs
+ z= ( -4.9278531335409994     , -1.1123830582503385     )
+ dbsdtZ ( -13.904788228139722     ,  61.249144512779893     )
+ finished derivs, deallocating
+ dbsdtZ ( -13.521984455429829     ,  61.336197006555999     )
+ finished derivs, deallocating
+ dbsdtZ ( -13.521433616514393     ,  61.333773759951605     )
+ finished derivs, deallocating
+ dbsdtZ ( -13.138116056136464     ,  61.418427136891289     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007498     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719118625     ,-6.23394565135715339E-015)
+ before derivs
+ z= ( -4.9413747569456934     , -1.0510484727198908     )
+ dbsdtZ ( -13.138105909008484     ,  61.418429509035484     )
+ finished derivs, deallocating
+ dbsdtZ ( -12.754243913136904     ,  61.500690864552581     )
+ finished derivs, deallocating
+ dbsdtZ ( -12.753723402697029     ,  61.498260919678955     )
+ finished derivs, deallocating
+ dbsdtZ ( -12.369377647508834     ,  61.578116921177006     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007456     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719116834     ,-3.15481148149832080E-015)
+ before derivs
+ z= ( -4.9541286599770578     ,-0.98954939772011152     )
+ dbsdtZ ( -12.369367471510616     ,  61.578119166322118     )
+ finished derivs, deallocating
+ dbsdtZ ( -11.984507222846871     ,  61.655576525640058     )
+ finished derivs, deallocating
+ dbsdtZ ( -11.984017122242685     ,  61.653140262098844     )
+ finished derivs, deallocating
+ dbsdtZ ( -11.598703218230906     ,  61.728186406029614     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007416     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719115049     ,-7.41041342872117426E-015)
+ before derivs
+ z= ( -4.9661128465403781     ,-0.92789544119547329     )
+ dbsdtZ ( -11.598693014952016     ,  61.728188523824528     )
+ finished derivs, deallocating
+ dbsdtZ ( -11.212894639900783     ,  61.800829779582379     )
+ finished derivs, deallocating
+ dbsdtZ ( -11.212435025741197     ,  61.798387577964071     )
+ finished derivs, deallocating
+ dbsdtZ ( -10.826213170224186     ,  61.868612133698541     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007376     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719113270     , 3.48625208562713951E-015)
+ before derivs
+ z= ( -4.9773254407931216     ,-0.86609623530003732     )
+ dbsdtZ ( -10.826202941258449     ,  61.868614123812023     )
+ finished derivs, deallocating
+ dbsdtZ ( -10.439526712865366     ,  61.936427921123013     )
+ finished derivs, deallocating
+ dbsdtZ ( -10.439097656996045     ,  61.933980162947499     )
+ finished derivs, deallocating
+ dbsdtZ ( -10.052028189218520     ,  61.999372153189277     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007339     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719111497     ,-4.66640615037761108E-015)
+ before derivs
+ z= ( -4.9877646874381547     ,-0.80416143489251357     )
+ dbsdtZ ( -10.052017936163795     ,  61.999374015310067     )
+ finished derivs, deallocating
+ dbsdtZ ( -9.6645242646982847     ,  62.062349753538818     )
+ finished derivs, deallocating
+ dbsdtZ ( -9.6641258341904130     ,  62.059896821195906     )
+ finished derivs, deallocating
+ dbsdtZ ( -9.2762692258959554     ,  62.120446023699657     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007305     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719109729     , 8.55598144416935824E-016)
+ before derivs
+ z= ( -4.9974289519981276     ,-0.74210071602776706     )
+ dbsdtZ ( -9.2762589503538653     ,  62.120447757536489     )
+ finished derivs, deallocating
+ dbsdtZ ( -8.8880083738705160     ,  62.178575591958655     )
+ finished derivs, deallocating
+ dbsdtZ ( -8.8876406310103047     ,  62.176117868648262     )
+ finished derivs, deallocating
+ dbsdtZ ( -8.4990574769930696     ,  62.231814817820208     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007274     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719107984     ,-4.55495016704610123E-015)
+ before derivs
+ z= ( -5.0063167210709789     ,-0.67992377444500529     )
+ dbsdtZ ( -8.4990471805687466     ,  62.231816423101826     )
+ finished derivs, deallocating
+ dbsdtZ ( -8.1101003554486581     ,  62.285087266445622     )
+ finished derivs, deallocating
+ dbsdtZ ( -8.1097633577275801     ,  62.282625136117936     )
+ finished derivs, deallocating
+ dbsdtZ ( -7.7205143663647755     ,  62.333461124498136     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007243     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719106227     ,-6.53567911595986928E-015)
+ before derivs
+ z= ( -5.0144266025665267     ,-0.61764032405288416     )
+ dbsdtZ ( -7.7205040506666434     ,  62.333462600973412     )
+ finished derivs, deallocating
+ dbsdtZ ( -7.3309217421402515     ,  62.381868124842910     )
+ finished derivs, deallocating
+ dbsdtZ ( -7.3306155422460462     ,  62.379401972138474     )
+ finished derivs, deallocating
+ dbsdtZ ( -6.9407615260126114     ,  62.425369051764761     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007216     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719104493     , 5.51371014817503280E-016)
+ before derivs
+ z= ( -5.0217573259241020     ,-0.55526009541176735     )
+ dbsdtZ ( -6.9407511926520984     ,  62.425370399202670     )
+ finished derivs, deallocating
+ dbsdtZ ( -6.5505942653049587     ,  62.468903035382411     )
+ finished derivs, deallocating
+ dbsdtZ ( -6.5503189111133677     ,  62.466433245572006     )
+ finished derivs, deallocating
+ dbsdtZ ( -6.1599207770803455     ,  62.507524229225332     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007194     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719102754     ,-2.14709977228166871E-015)
+ before derivs
+ z= ( -5.0283077423111964     ,-0.49279283421337788     )
+ dbsdtZ ( -6.1599104276716554     ,  62.507525447415027     )
+ finished derivs, deallocating
+ dbsdtZ ( -5.7692398359346253     ,  62.546178389056109     )
+ finished derivs, deallocating
+ dbsdtZ ( -5.7689953705019050     ,  62.543705347980605     )
+ finished derivs, deallocating
+ dbsdtZ ( -5.3781141108199915     ,  62.579913810311517     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007172     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719101037     , 1.01383745149119520E-015)
+ before derivs
+ z= ( -5.0340768248030905     ,-0.43024829975807788     )
+ dbsdtZ ( -5.3781037469798312     ,  62.579914899062295     )
+ finished derivs, deallocating
+ dbsdtZ ( -4.9869805256052313     ,  62.613682101749468     )
+ finished derivs, deallocating
+ dbsdtZ ( -4.9867669871613831     ,  62.611206195759578     )
+ finished derivs, deallocating
+ dbsdtZ ( -4.5954636695311279     ,  62.642526474295678     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007156     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719099326     ,-8.88959045264314796E-015)
+ before derivs
+ z= ( -5.0390636685434309     ,-0.36763626343001521     )
+ dbsdtZ ( -4.5954532928784770     ,  62.642527433437145     )
+ finished derivs, deallocating
+ dbsdtZ ( -4.2039385474035900     ,  62.671403616136764     )
+ finished derivs, deallocating
+ dbsdtZ ( -4.2037559693463935     ,  62.668925232032670     )
+ finished derivs, deallocating
+ dbsdtZ ( -3.8120917274765547     ,  62.695352428067089     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007139     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719097615     , 1.05999464847933433E-014)
+ before derivs
+ z= ( -5.0432674908857402     ,-0.30496650717037471     )
+ dbsdtZ ( -3.8120813396324027     ,  62.695353257449007     )
+ finished derivs, deallocating
+ dbsdtZ ( -3.4202362368319155     ,  62.719333903337912     )
+ finished derivs, deallocating
+ dbsdtZ ( -3.4200846477216595     ,  62.716853428308866     )
+ finished derivs, deallocating
+ dbsdtZ ( -3.0281206717772267     ,  62.738383407669247     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007123     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719095916     , 5.71184809519675873E-015)
+ before derivs
+ z= ( -5.0466876315158267     ,-0.24224882194897274     )
+ dbsdtZ ( -3.0281102743643165     ,  62.738384107161728     )
+ finished derivs, deallocating
+ dbsdtZ ( -2.6359960326931215     ,  62.757465464336541     )
+ finished derivs, deallocating
+ dbsdtZ ( -2.6358754562481339     ,  62.754983285900430     )
+ finished derivs, deallocating
+ dbsdtZ ( -2.2436729832894411     ,  62.771612679598633     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007114     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719094233     , 3.06268140189136506E-015)
+ before derivs
+ z= ( -5.0493235525550828     ,-0.17949300623443371     )
+ dbsdtZ ( -2.2436625779320174     ,  62.771613249092034     )
+ finished derivs, deallocating
+ dbsdtZ ( -1.8513404579599120     ,  62.785792331159278     )
+ finished derivs, deallocating
+ dbsdtZ ( -1.8512509130528265     ,  62.783308837101991     )
+ finished derivs, deallocating
+ dbsdtZ ( -1.4588712174673195     ,  62.795035041864161     )
+ finished derivs, deallocating
+ norm after rk4 calculated with bsout   1.0000000000007105     
+ Hehr_tot after rk4 calculated with bsout (  322.70314719092556     , 3.92567922613551445E-015)
+ ************************************************************************
+ ************************************************************************
+ Time taken:  5.33366666666666603E-004 mins
+ Outputs:No.Tout.dat         No.Cout.dat         No.outp.dat         No.bfout.dat        
+ program terminated ok
+ ************************************************************************
+ ************************************************************************
+ wohooooooooooooooooooo

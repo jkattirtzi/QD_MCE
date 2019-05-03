@@ -1,0 +1,24 @@
+ # This is a general output file
+ it wil contain the initial conditions of the basis set 
+ Parameters from input.dat
+ Number of degrees of freedom/dimensions           1
+ Number of basis functions           1
+ units
+ hbar   1.0000000000000000      m   1.0000000000000000      angular frequency   1.0000000000000000      gamma   1.0000000000000000     
+ initial wavefunction
+ Parameters from inham.dat
+ System:SpinBose            
+ Hamiltonian Parameters
+ Initial Time   0.0000000000000000     
+ Max Time  0.10000000000000001     
+ Time step  1.00000000000000002E-003
+ Initial basis set
+ Initial z
+ basis function           1 z (  4.0643587112426758     , -2.9110481739044189     )
+ Initial d
+ basis function           1 d (-9.38912760466337204E-003, 2.09205318242311478E-003)
+ Initial Calculated Properties:
+ Initial norm  9.25324036947384326E-005
+ Initial classical energy (  0.0000000000000000     ,  0.0000000000000000     )
+ Initial quantum total energy (  0.0000000000000000     ,  0.0000000000000000     )
+ Initial quantum expectation energy (  322.70314719399369     ,  0.0000000000000000     )

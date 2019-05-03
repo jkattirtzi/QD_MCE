@@ -1,0 +1,8 @@
+stuff that needs to be done to run the program
+1. sort out the basis set program to generate a correct mce basis set- think this might be easy actually - s=0 d=1 or 0- need to read emails from dmitry
+2. read input file correctly
+3. program conserved quantities
+4. sort out output of file- trajectory and conserved qnts
+5. sort out loop for main program to do trajectory and output
+6. after initial test make version 2 where all null subroutines/functions removed
+

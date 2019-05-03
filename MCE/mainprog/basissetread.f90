@@ -1,0 +1,699 @@
+!%********************************************************************************************************************!!
+!%Author: John Kattirtzi, Date: 20/08/09
+!%                                                      Module: BSET2
+!%      This module was originally intended to be part of the main
+!%      program. It has now been modified so as to be part of a 
+!%      smaller program that configures a basis set. 
+!%      This module consist of subroutines for:
+!%      allocate the memory of the basis set
+!%      initialise s
+!%      define basis function type- overload operators
+!%      The overlap matrix
+!%      Going from C-TO-D initially, but then going from D TO C
+!%      Calculating the norm
+!%      Note that the following comments were wrriten as part of 
+!%      BSET module and may now be outdated
+!%********************************************************************************************************************!!
+
+MODULE BSET2
+
+  type config
+     complex(kind=8), dimension(:), allocatable::d_config
+     real(kind=8), dimension(:), allocatable::s_config
+     complex(kind=8),dimension(:),allocatable::a
+  end type config
+
+!$********************************************************************************************************************!!
+!$                                              Derived Type: csbasisfn
+!$
+!$      This is a derived type which will define each individual basis function
+!$      An array of these types (basis functions) will therefore give the basis
+!$      set. 
+!$      The type consists of a complex array of zs which will depend on n*
+!$      dimensions (ndim). 
+!$      It will also consist of an amplitude(complex) and an action variable
+!$      (real).
+!$********************************************************************************************************************!!
+
+  type csbasisfn
+     complex(kind=8),dimension(:),allocatable::z
+     complex(kind=8)::d
+!    real   (kind=8)::s
+     type(config)::allconf
+  end type csbasisfn
+!$********************************************************************************************************************!!
+!$                      Basis Set Parameters:
+!$      gam defines the gamma in the expression for z:
+!$      z=SQRT(gam/2)*q+i/hbarSQRT(1/2gam)*p
+!$      m defines the mass 
+!$      w defines the angular frequency (omega)
+!$      hbar is hbar and is initialised to 1.0
+!$      nbf is the number of basis functions
+!$      ndim is the number of dimensions
+!$      The interface operators are needed to overload the operators
+!$
+!$      Note- think about initialising the others to 1 too and not reading them
+!$
+!$********************************************************************************************************************!!
+  real(kind=8),dimension(:),allocatable::gam
+  real(kind=8),dimension(:),allocatable::m
+  real(kind=8)::hbar=1.0d0
+  real(kind=8),dimension(:),allocatable::w ! omega- angular frequency
+!  real(kind=8)::ma
+  ! type parameters for memory can go here:
+  integer::nbf   ! number of basis functions
+  integer::ndim ! number of dimensions/degrees of freedom-might have this with nbf, skr suggests there
+  integer::nconf
+  character(LEN=5)::symop! determines whether basis set should be symmetrical
+  interface operator (+)
+     Module procedure add
+  end interface
+
+  interface operator (*)
+     Module procedure mult
+  end interface
+
+contains
+
+!$********************************************************************************************************************!!
+!$                                              Functions: OVERLOAD
+!$      The functions add and mult are required to overload the operators
+!$      The function add, adds two basis functions togther
+!$      It adds the corresponding components of the basis functions
+!$      The function mult, multiplies a real number by a basis function
+!$      These functions are required for the integration routine
+!$      
+!$********************************************************************************************************************!!
+  Function add(bs1,bs2)
+    Implicit none
+    type(csbasisfn),dimension(:),intent(in)::bs1,bs2
+    type(csbasisfn),dimension(size(bs1))::add
+    integer::i
+    call IBASISSET(add)! allocates memory for the z array
+    If( (.not. size(bs1) ==size(bs2)) .OR. (size(bs1)==0 .OR. size(bs2) ==0)) then
+            Print *, 'basis sets added arent equal sizes'
+    End If
+    do i=1,nbf
+!       add(i)%s=bs1(i)%s+bs2(i)%s
+       add(i)%d=bs1(i)%d+bs2(i)%d
+       !Print *, size(add%z), 'size'
+       add(i)%z(1:ndim)=bs1(i)%z(1:ndim)+bs2(i)%z(1:ndim)
+       add(i)%allconf%s_config(1:nconf)=bs1(i)%allconf%s_config(1:nconf)&
+       &+bs2(i)%allconf%s_config(1:nconf)
+       add(i)%allconf%d_config(1:nconf)=bs1(i)%allconf%d_config(1:nconf)&
+              &+bs2(i)%allconf%d_config(1:nconf)
+       add(i)%allconf%a(1:nconf)=bs1(i)%allconf%a(1:nconf)&
+              &+bs2(i)%allconf%a(1:nconf)
+    end do
+  END FUNCTION add
+
+  Function mult(r,bs1)
+    Implicit none
+    type(csbasisfn),intent(in),dimension(:)::bs1
+    real(kind=8),intent(in)::r               ! this will help check kind is always the same
+    type(csbasisfn),dimension(size(bs1))::mult
+    integer::i
+    call IBASISSET(mult)! allocates memory for the z array
+    do i=1,nbf
+!       mult(i)%s=bs1(i)%s*r
+       mult(i)%d=bs1(i)%d*r
+       mult(i)%z(1:ndim)=bs1(i)%z(1:ndim)*r
+       mult(i)%allconf%s_config(1:nconf)=bs1(i)%allconf%s_config(1:nconf)*r
+       mult(i)%allconf%d_config(1:nconf)=bs1(i)%allconf%d_config(1:nconf)*r
+       mult(i)%allconf%a(1:nconf)=bs1(i)%allconf%a(1:nconf)*r
+    end do
+  End Function mult
+
+  SUBROUTINE INCONF(bf)
+    TYPE(csbasisfn),intent(inout)::bf
+    allocate(bf%allconf%s_config(nconf))
+    allocate(bf%allconf%d_config(nconf))
+    allocate(bf%allconf%a(nconf))
+  END SUBROUTINE INCONF
+
+    ! subroutine that will allocate each bf%z
+
+  Subroutine OUTBASISFN(bf)
+   type(csbasisfn)::bf
+    deallocate(bf%allconf%s_config)
+    deallocate(bf%allconf%d_config)
+    deallocate(bf%allconf%a)
+    deallocate(bf%z)
+  End subroutine
+
+  SUBROUTINE INBASISFN(bf)
+    IMPLICIT NONE
+    integer::n
+    TYPE(csbasisfn), intent(inout)::bf
+    allocate(bf%z(ndim))
+  END SUBROUTINE INBASISFN
+
+    ! subroutine that will do a loop to allocate the basis function array
+  SUBROUTINE IBASISSET(bs)
+    IMPLICIT NONE
+    type(csbasisfn),dimension(:),intent(inout)::bs
+    integer:: i
+    do i=1,size(bs)
+       call inbasisfn(bs(i))! this allocates each bf%z
+       call INCONF(bs(i))
+    end do
+  END SUBROUTINE IBASISSET
+  ! need to allocate bs array before calling this routine
+
+  SUBROUTINE ALCBASIS(bs)
+    IMPLICIT NONE
+    type(csbasisfn),dimension(:),allocatable::bs
+    !integer::n ! if try to delcare this as in/inout/out get an error- not sure
+    allocate(bs(nbf))
+    CALL IBASISSET(bs)! calls another routine that allocates memory to each basis fn
+  END SUBROUTINE ALCBASIS
+!$********************************************************************************************************************!!
+!$                                              Subroutine: ALCPAR
+!$      This allocates the parameters that are ndim arrays- gamma, mass,angular frequency
+!$********************************************************************************************************************!!
+
+  Subroutine ALCPAR
+    Implicit none
+    allocate(gam(ndim))
+    allocate(m(ndim))
+    allocate(w(ndim))
+    gam(1:ndim)=1.0d0    ! I don't have an input file for them now
+     m(1:ndim)=1.0d0
+     w(1:ndim)=1.0d0
+  End Subroutine ALCPAR
+
+!$********************************************************************************************************************!!
+!$                                              Subroutine: BSGAMCHK
+!$      This subroutine checks that the values of gamma, mass and omega inputed
+!$      are sensible, i.e gamma inputed = m*w/hbar  
+!$********************************************************************************************************************!!
+
+  Subroutine BSGAMCHK
+    Implicit none
+    real(kind=8),dimension(:),allocatable::gamout
+    integer::i
+    allocate(gamout(size(gam)))
+    do i=1,ndim
+       gamout(i)=m(i)*w(i)/hbar
+       IF (gamout(i) .ne. gam(i)) then
+          Print *, 'WARNING gamma isnt mw/hbar in dimension', i
+          Print *, 'gam', gam(i), 'gamout', gamout(i)
+          Print *, 'm',m(i), 'wfrq', w(i), 'hbar', hbar
+       end if
+    end do
+  End Subroutine BSGAMCHK
+
+!$********************************************************************************************************************!!
+!$                                              Function OVRLELMT
+!$      This functions gives the overlap element for two basis functions
+!$      For two basis functions with multidimensions the results is:
+!$      OVERLAPELMT=PRODUCT_dim( <bf1_d1 | bf2_d1> <bf1_d2|bf2_d2>
+!       ...<bf1_dn|bf2_dn>) where d is the dimension index
+!$********************************************************************************************************************!!
+
+  FUNCTION OVRLPELMT(bf1,bf2)
+    IMPLICIT NONE
+    ! a function to calculate  the overlap between two matrix elements
+    type(csbasisfn),intent(in)::bf1,bf2
+    !complex(kind=8)::bf1,bf2
+    complex(kind=8)::OVRLPELMT
+    complex(kind=8)::expnt
+    ! new variables for checking
+    complex(kind=8)::z1,z2,z1c,z2c, z1cz2,z22,z11
+    integer::i,j
+    OVRLPELMT=cmplx(1.0d0,0.0d0)
+    do i=1,ndim
+        !do j=1,ndim
+       z1=bf1%z(i)
+       z2=bf2%z(i)
+       z1c=dconjg(z1)
+       z2c=dconjg(z2)
+       z1cz2=z1c*z2
+       z11=z1c*z1
+       z22=z2*z2c
+    !Print *, 'z2', z2,'z1cz2', z1cz2, 'z11', z11, 'z22', z22
+       OVRLPELMT=OVRLPELMT*cdexp(z1cz2 - 0.5d0*z11- 0.5d0*z22)
+       !end do
+    end do
+    If (size(bf1%z) .ne. size(bf2%z)) then
+      Print *, 'error in sizes of basis fns in OVERLELMT'
+    End if
+  END FUNCTION OVRLPELMT
+
+!$********************************************************************************************************************!!
+!$                                              Function OVRLMAT
+!$      This functions will give the overlap matrix using the OVRLELMT function
+!$********************************************************************************************************************!!
+
+  SUBROUTINE OVRLMAT(omega,bs)
+ !   subroutine calculates the overlap matrix from the basis set array
+    IMPLICIT NONE
+    type(csbasisfn),dimension(:),intent(in)::bs
+    complex(kind=8),dimension(:,:),intent(out)::omega
+    integer ::i,j,n, nbf2
+    nbf2=nbf**2 ! nbf is global variable
+    If (size(omega) .ne. nbf2 ) then
+      Print *, 'error in size of omega, stop!'
+      Print *, 'size of omega', size(omega)
+      STOP
+    End if
+    n=size(bs)
+    if (n .ne. nbf) then 
+       Print *, "error in OVRLMAT routine"
+    end if
+    do i=1,n-1
+       omega(i,i)=cmplx(1.0d0,0.0d0)! ensures diagonal elements are 1           
+       do j=i+1,n
+          omega(i,j)=OVRLPELMT(bs(i),bs(j))! uses the overlap function written
+          omega(j,i)=dconjg(omega(i,j))
+       end do
+    end do
+    omega(n,n)=cmplx(1.0d0,0.0d0)! ensures last diagonal element is 1
+    !Print *, 'omega', omega
+  END SUBROUTINE OVRLMAT
+
+! function to do overlap of phis <phi|phi>
+    Function ovlphiel(bf1,bf2)
+      Implicit None
+      type(csbasisfn),intent(in)::bf1,bf2
+      complex(kind=8)::ovlphiel
+      complex(kind=8),dimension(nconf)::aj,ai
+      complex(kind=8)::aji
+      call Mka (bf1,ai)
+      call Mka (bf2,aj)
+      aji=sum(dconjg(aj(1:nconf))*ai(1:nconf))
+      ovlphiel=OVRLPELMT(bf1,bf2)*aji
+    End Function ovlphiel
+! subroutine to get overlap matrix of <phi|phi>
+    Subroutine ovlphimat2(omega,bs)
+      Implicit none
+      type(csbasisfn),dimension(:),intent(in)::bs
+      complex(kind=8),dimension(:,:),intent(out)::omega
+      integer ::i,j,n, nbf2
+      nbf2=nbf**2 ! nbf is global variable
+      If (size(omega) .ne. nbf2 ) then
+         Print *, 'error in size of omega, stop!'
+         Print *, 'size of omega', size(omega)
+         STOP
+      End if
+      n=size(bs)
+      if (n .ne. nbf) then
+         Print *, "error in OVRLMAT routine"
+      end if
+      do i=1,n-1
+         omega(i,i)=cmplx(1.0d0,0.0d0)! ensures diagonal elements are 1           
+         do j=i+1,n
+            omega(i,j)=ovlphiel(bs(i),bs(j))! uses the overlap function written
+            omega(j,i)=dconjg(omega(i,j))
+         end do
+      end do
+      omega(n,n)=cmplx(1.0d0,0.0d0)
+    End Subroutine Ovlphimat2
+
+
+
+! takes in basis function returns complex conjugate basis function
+    Subroutine bfconz(bf1,bf1cz)
+      Implicit none
+      type(csbasisfn),intent(in)::bf1
+      type(csbasisfn),intent(out)::bf1cz
+      IF (.not. allocated (bf1cz%z)) then
+         call INBASISFN(bf1cz)
+      END IF 
+      IF (.not. allocated (bf1cz%allconf%d_config)) then
+         call INCONF(bf1cz)
+      END IF
+      bf1cz%z(1:ndim)=dconjg(bf1%z(1:ndim))
+      bf1cz%d=dconjg(bf1%d)
+      bf1cz%allconf%d_config(1:nconf)=dconjg(bf1%allconf%d_config(1:nconf))
+      bf1cz%allconf%s_config(1:nconf)=(bf1%allconf%s_config(1:nconf))
+      bf1cz%allconf%a(1:nconf)=dconjg(bf1%allconf%a(1:nconf))
+     ! Print *, 'IN bfconz'
+     ! Print *, 'bf1%z', bf1%z
+     ! Print *, 'bf1cz%z', bf1cz%z
+     ! Print *, 'bf1%allcd', bf1%allconf%d_config
+     ! Print *, 'bf1cz%allcd', bf1cz%allconf%d_config
+    End Subroutine bfconz
+
+!takes in basis function, returns array a=d(exp(iS)
+
+    Subroutine Mka(bf1,a)
+     Implicit none
+     type(csbasisfn),intent(in)::bf1
+     complex(kind=8),dimension(:),intent(out)::a
+     real(kind=8)::Ra, Ia
+     complex(kind=8),parameter::Img=cmplx(0.0d0,1.0d0)
+     integer::s, i
+     s=size(a)
+     IF (s .ne. nconf) then
+      Print  *, 'Error in Mka, array a isnt equal to nconf'
+      STOP
+     END IF
+     a(1:nconf)=bf1%allconf%d_config(1:nconf)*cdexp(Img*bf1%allconf%s_config(1:nconf))
+     !do i=1,nconf
+     !   Ra=real(real(a(i)))
+     !   Ia=real(AIMAG(a(i)))
+     !   IF (nint(Ra) .eq. 1) then
+    !      Ra=1.0d0
+    !     else 
+    !      Ra=0.0d0
+    !    END IF
+    !    IF (nint(Ia) .eq. 1) then
+    !      Ia=1.0d0
+    !    else 
+    !      Ia=0.0d0
+    !    END IF
+    !   a(i)=cmplx(Ra,Ia)
+    !end do
+    !  print *, 'made a', a
+    End Subroutine Mka
+               
+   Subroutine Mka2(bf1)
+   Implicit none
+   type(csbasisfn),intent(inout)::bf1
+   complex(kind=8),dimension(nconf)::a
+   complex(kind=8),parameter::Img=cmplx(0.0d0,1.0d0)
+   a(1:nconf)=bf1%allconf%d_config(1:nconf)*exp(Img*bf1%allconf%s_config(1:nconf))
+   bf1%allconf%a(1:nconf)=a(1:nconf)
+   End Subroutine Mka2
+
+!$********************************************************************************************************************!!
+!$                                              Subroutine CTODin
+!$      This subroutine takes in the input c and gives a value of d. 
+!$      However, this can only be called before the trajectory is run.
+!$      This is because the phase factor (e^(i/hbar)*si-sj) is ignored.
+!$      This function can therefore be used to calculate initial c and initial
+!$      norm but should not be used when the trajectory is being calculated.
+!$      The equation that is solved is:
+!$      c=OMEGA*d
+!$      where OMEGA is the overlap matrix and c and d are arrays. 
+!$      To solve this LAPACK is needed (ZGESV). 
+!$********************************************************************************************************************!!
+  SUBROUTINE CTODin(c,bs)
+    ! subroutine to go from c to d initially - phase =1
+    ! check for a phase factor if using not initially
+    implicit none
+    integer i,j,k, LDA,LDB,N, NRHS, INFO
+    integer, DIMENSION(nbf)::IPIV
+    complex(kind=8), DIMENSION(:,:),allocatable :: omega
+    COMPLEX(kind=8), DIMENSION(:,:),allocatable::zlapin
+    COMPLEX(kind=8), DIMENSION(:), INTENT(IN)::c
+    complex(kind=8), DIMENSION(size(c))::cin
+    complex(kind=8), dimension(size(c))::cout
+    !type(csbasisfn), DIMENSION(:), allocatable::bs
+    type(csbasisfn), dimension(:)::bs
+    !     Declare character needed to read input
+    !INTERFACE
+    include "./LAPACK/ZGESV.f90"
+    !END INTERFACE
+    allocate(zlapin(nbf,nbf))
+    allocate(omega(nbf,nbf))
+    if ((size(c) == 0) .OR. (size(bs) ==0) .OR. (size(omega)==0)) then
+       Print *, 'WARNING (in CTODin basisset mod )arrays assumed not allocated- will prob get segmentation fault!'
+       Print *, 'size c', size(c), 'size bs', size(bs), 'omega', size(omega)
+    end if
+    call OVRLMAT(omega,bs)
+   ! Print *, 'initial ovrlmat', omega
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+    !     routine to calculate d from c
+    !     really need to put this in a seperate subroutine according to Dmitry
+    LDA=nbf
+    LDB=nbf
+    NRHS=1 ! This was one before needs checking!!! could be 1 or ndim?
+    N=nbf
+    INFO=0
+    IPIV=0
+    zlapin=omega
+    cin=c
+    !Print *, 'zlapin',zlapin
+    !Print *, 'cin', cin
+    CALL ZGESV(N, NRHS, zlapin, LDA, IPIV, cin, LDB, INFO) ! be weary of compiler issues
+    IF (INFO .ne. 0) then
+       Print *, 'WARNING: INFO in CTODin', INFO
+    END IF
+    bs%d=cin
+   ! cout=MATMUL(omega,bs%d)
+   ! do i=1,nbf
+    !  IF (cout(i) .ne. c(i)) then 
+    !    Print *, 'error with LAPACK- cout neq cin in CTODin'
+    !  END IF
+   ! end do
+    deallocate(zlapin)
+    deallocate(omega)
+    !Print *, 'dint from c', d
+    !     Check that zlap*d =c
+    !      c=MATMUL(zlap, d)
+    !      Print *, 'c', c
+    !      Print *, 'if c is the same as cin before then ds are sorted'
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  END SUBROUTINE CTODin
+
+!$********************************************************************************************************************!!
+!$                                              Subroutine DTOC
+!$    This subroutine solves the simpler equation:
+!$    c=Omega*D*e(i/hbar(si-sj)) where Omega and D are both known
+!$    It takes phase into account and so can be used at any point
+!$********************************************************************************************************************!!
+  
+  SUBROUTINE DTOC(c,bs)
+    ! subroutine to go from d to c
+    Implicit none
+    complex(kind=8), dimension(:,:),allocatable::omega
+    complex(kind=8), dimension(:), intent(out)::c 
+    type(csbasisfn), dimension(:),intent(in)::bs
+    integer::  j,k, l,m
+    allocate(omega(nbf,nbf))
+    if ((size(c) == 0) .OR. (size(bs) ==0)) then
+       Print *, 'WARNING (in DTOC basisset mod )arrays assumed not allocated- will prob get segmentation fault!'
+       Print *, 'size c', size(c), 'size bs', size(bs) 
+    end if
+    call OVRLMAT(omega,bs)! modified this after written prog.f90 so might need to change this
+    !do l=1,nbf
+    !    do m=1,nbf
+    !           Print *, 'omega', omega(l,m)
+    !    end do
+    !end do
+    c(1:nbf)=0.0d0
+    do j=1,nbf
+       do k=1,nbf
+           c(j)=c(j)+(omega(j,k)*bs(k)%d*exp((cmplx(0.0d0,1.0d0)/hbar)))
+!%           c(j)=c(j)+(omega(j,k)*bs(k)%d*exp((cmplx(0.0d0,1.0d0)/hbar)*(bs(k)%s-bs(j)%s))) -different in MCEe
+        !  Print *, 'omegajk', omega(j,k)
+       end do   
+    !   Print *, 'c', c(j)
+    end do
+    deallocate(omega)
+  End SUBROUTINE DTOC
+
+!$********************************************************************************************************************!!
+!$                                                      Subroutine Norml
+!$      This suboroutine takes in a c value and a d value (from bs) and
+!$      calculates the normal from it. 
+!$      It can be used at any time but c must be calculated first. 
+!$      norm =Sum_i (c*_i d_i_)
+!$********************************************************************************************************************!!
+
+!  Subroutine Norml(c,norm,bs)
+!    ! subroutine to calc the norm
+!    Implicit None
+!    type(csbasisfn),dimension(:),intent(in)::bs
+!    complex(kind=8),dimension(:),intent(in)::c
+!    real(kind=8),intent(out)::norm
+!    if ((size(c) == 0) .OR. (size(bs) ==0)) then
+!       Print *, 'WARNING (in Norm1 basisset mod )arrays assumed not allocated- will prob get segmentation fault!'
+!       Print *, 'size c', size(c), 'size bs', size(bs) 
+!    end if
+ 
+!    norm=sum(dconjg(c(1:nbf))*bs(1:nbf)%d)
+  !Print *,'in norml,c', c(1:nbf),'d', bs(1:nbf)%d
+!  End Subroutine Norml
+
+!$********************************************************************************************************************!!
+!$                                              Subroutine Norm2
+!$      This subroutine calculates the norm without the need to calculate c
+!$      prior to this. 
+!$      It solves norm=sum d_i e(i/hbar (si-sj)) d*_j omega_ji
+!$      This is equivalent to the expression for norm calculated with c e
+!$********************************************************************************************************************!!
+!*-CCS norm- must be different for MCE due to no %s
+  Subroutine NormMCE(bs,norm)
+    Implicit none
+    type(csbasisfn),dimension(:),intent(in)::bs
+    real(kind=8),intent(out)::norm
+    real(kind=8),dimension(nbf)::normarray
+    complex(kind=8), dimension(:,:),allocatable::omega
+    integer::h,i,j
+    allocate(omega(nbf,nbf))
+!    call OVRLMAT(omega,bs)
+    call ovlphimat2(omega,bs)
+    norm=0.0d0
+    do i=1,nbf
+       do j=1,nbf
+       ! "norm=norm+bs(i)%d*exp((cmplx(0.0d0,1.0d0)/hbar)*(bs(i)%s-bs(j)%s))*(dconjg(bs(j)%d))*omega(j,i)
+          norm=norm+bs(i)%d*(dconjg(bs(j)%d))*omega(j,i)
+       end do
+    end do
+    deallocate(omega)
+  End Subroutine NormMCE
+
+!$********************************************************************************************************************!!
+!$                                              Subroutine Norm2
+!$      This subroutine calculates the norm without the need to calculate c
+!$      prior to this. 
+!$      It solves norm=a(1)*a(1)+a(2)*a(2)=1
+!$********************************************************************************************************************!!
+!*-CCS norm- must be different for MCE due to no %s
+  Subroutine Norm2MCE(bs,norm)
+    Implicit none
+    type(csbasisfn),dimension(:),intent(in)::bs
+    type(csbasisfn)::bfi
+    real(kind=8),intent(out)::norm
+    real(kind=8),dimension(nbf)::normi
+    !real(kind=8),dimension(nbf)::normarray
+    complex(kind=8),dimension(nconf)::a
+    !complex(kind=8), dimension(:,:),allocatable::omega
+    integer::h,i,j
+    norm=0.0d0
+    normi=0.0d0
+    a=(0.0d0,0.0d0)
+    do i=1,nbf
+       bfi=bs(i)
+       call Mka(bfi,a)
+       !norm=norm+(dconjg(a(i)))*a(i)
+       !print *, 'i', i, 'nbf', nbf
+       !STOP
+       normi(i)=sum(dconjg(a(1:nconf))*a(1:nconf))
+       Print *, 'i=', i,'normi', normi(i)
+    end do
+    norm=product(normi(1:nbf))
+  END Subroutine Norm2MCE
+!$********************************************************************************************************************!!
+!$   
+!$ A subroutine that will read in a basis set, z and c!
+!$********************************************************************************************************************!!
+  
+  Subroutine ReadBSIn(bs,c)
+    Implicit None
+    type(csbasisfn),dimension(:), allocatable,intent(out)::bs
+    type(csbasisfn)::bf1
+    complex(kind=8),dimension(:),allocatable::c
+    real(kind=8):: cr, ci 
+    real(kind=8)::zr, zi, d_c
+    real(kind=8), dimension(:),allocatable::conf_d
+    integer::ierr, i, j, k, p
+    character(LEN=10)::Line1
+    ierr=0
+    OPEN(72, FILE='basisset.dat', STATUS='OLD',iostat=ierr)
+    IF (ierr .ne. 0) then
+        Print *, 'error reading basisset.dat'
+    END IF
+    read(72,*,iostat=ierr)Line1, ndim
+    If (ierr .ne. 0) then
+       Print *, 'error reading ndim, ierr=', ierr, 'ndim=', ndim
+    End If
+    Print *, Line1, ndim
+
+    read(72,*,iostat=ierr)Line1, nconf
+    If (ierr .ne. 0) then
+       Print *, 'error reading nconf'
+    End If
+    Print *, Line1, nconf
+    read(72,*, iostat=ierr), Line1, nbf
+    If (ierr .ne. 0) then
+       Print *, 'error reading nbf'
+    End If
+    Print *, Line1, nbf
+    allocate(c(nbf))
+    call ALCBASIS(bs)
+    read(72,*,iostat=ierr), Line1, p
+    IF (nconf .ne. 2) then
+      Print *, 'allocating conf_d assuming nconf=2 but it isnt!'
+      Print *, 'Stopping!'
+      STOP
+    END IF 
+    allocate (conf_d(nconf))
+    IF ((.not. (Line1 =='PES'))) then
+           Print *, 'error associated with reading PES', Line1
+           STOP
+    END IF
+    IF (p == 1) then
+     conf_d(1)=1.0d0
+     conf_d(2)=0.0d0
+    ELSE IF (p==2) then
+     conf_d(1)=0.0d0
+     conf_d(2)=1.0d0
+    ELSE 
+    Print *, 'p is not equal to 1 or 2-confused...stopping!'
+    STOP
+    END IF
+    call INBASISFN(bf1)
+    call INCONF(bf1)
+    do i=1,nbf
+        do j=1,nconf
+           d_c=conf_d(j)
+           bs(i)%allconf%d_config(j)=cmplx(d_c,0.0d0)
+           bs(i)%allconf%s_config(j)=cmplx(0.0d0,0.0d0)
+           !Print *, 'Setting up confd, initial d_config=', bs(i)%allconf%d_config(j)
+        end do
+        bf1=bs(i)
+        call Mka2(bf1)
+        bs(i)%allconf%a(1:nconf)=bf1%allconf%a(1:nconf)
+    end do
+    DEALLOCATE (bf1%z)
+    DEALLOCATE (bf1%allconf%d_config)
+    DEALLOCATE (bf1%allconf%a)
+! need to read if PES is = 0/1 and assign conf_d accordingly
+    do i=1,nbf
+       read(72,*,iostat=ierr), Line1, k
+       IF ((ierr .ne. 0 ) .OR. (k .ne. i)) then
+          Print *, 'error in reading basis function number'
+          print *, 'i', i, 'k', k, 'iostat', ierr
+          stop
+       End IF
+       read(72,*,iostat=ierr), Line1,cr, ci
+       IF (.not. (Line1 =='C')) then
+           Print *, 'error associated with reading c', Line1
+           STOP
+       END IF
+       c(i)=cmplx(cr,ci)
+       !       If (ierr .ne. 0) then
+       !   Print *, 'error reading ndim' 
+       !End If
+       do j=1,ndim
+          read(72,*,iostat=ierr), zr, zi
+          bs(i)%z(j)=cmplx(zr,zi)
+          If (ierr .ne. 0) then
+             Print *, 'error reading ndim'
+          End If
+       end do
+       !read(72,*,iostat=ierr), Line1, dr, di
+       !do j=1,nconf
+       !   read(72,*,iostat=ierr),Line1,  dr, di
+       !IF (.not. (Line1 =='conf_d')) then
+       !   Print *, 'error associated with reading conf_d', Line1
+       !   STOP
+       !END IF
+       !If (ierr .ne. 0) then
+       !   Print *, 'error reading dr di'
+       !End If
+       !end do
+       
+    end do
+    Print *, 'calling CTODin'
+    Print *, 'c', c
+    call CTODin(c,bs)
+    do j=1,nbf
+        Print *, 'bf z', bs(j)%z
+        Print *, 'bf D', bs(j)%d
+!        Print *, 'bf s', bs(j)%s
+        Print *, 'bf conf s', bs(j)%allconf%s_config
+        Print *, 'bf conf d', bs(j)%allconf%d_config
+        print *, 'bf conf a', bs(j)%allconf%a
+    end do    
+    deallocate(conf_d)
+    Print *, 'finished bs initialisation'
+    close(72)
+  End Subroutine ReadBSIn
+
+END MODULE BSET2
+

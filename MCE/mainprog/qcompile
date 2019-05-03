@@ -1,0 +1,4 @@
+FC=gfortran
+#$FC -O3 -o MCEProg -m64 -static-libgfortran -fbounds-check ./LAPACK/dep.o ./LAPACK/driv.o basissetread.f90 HamiltonianSpec.f90 GenHam.f90 Integration.f90 OutMod.f90 mceprog.f90
+#!!Outmod.f90 before mceprog
+$FC -O3 -o MCEProg -static-libgfortran -fbounds-check ./LAPACK/dep.o ./LAPACK/driv.o basissetread.f90 HamiltonianSpec.f90 GenHam.f90 Integration.f90 OutMod.f90 mceprog.f90

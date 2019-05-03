@@ -1,0 +1,72 @@
+!%********************************************************************************************************************!!
+!%                                                      Program TestEverything
+!%      This is a program this is written to test the modules written
+!%      It will test:
+!%      Initialisation of the basis set
+!%      Running the trajectory (Integration)
+!%      If the classical energy is being conserved
+!%      If the norm is being conserved
+!%********************************************************************************************************************!!             
+
+
+Program TestEverything
+use BSET2
+use HamiltonianSpec                                          
+use GenHam                                                   ! namesys is declared here   
+use Integration
+use OutMod
+use ACFMOD
+!use Check
+use Hubbard
+Implicit none
+type(csbasisfn),dimension(:),allocatable::bs                 ! basis set
+character(LEN=100)::LINE1                                    ! character variable that is read in
+character(LEN=100)::LINE2
+! parameters for reading in z (except for LINE1 above):
+integer(kind=8):: myseed
+integer::outp
+!real(kind=8):: sigp,sigq
+real(kind=8),dimension(:), allocatable::mup, muq
+!real(kind=8),external::ZBQLNOR
+! extra variables for initialising d
+complex(kind=8), dimension(:),allocatable::c
+complex(kind=8), dimension(:),allocatable::zp
+complex(kind=8), dimension(:,:),allocatable::omega
+complex(kind=8)::psi
+! variable for norm
+real(kind=8)::norm
+! variables for hamiltonian tests
+complex(kind=8):: classical
+complex(kind=8):: quantum
+complex(kind=8):: total
+! variables for integration test
+real(kind=8)::t0
+real(kind=8)::dt
+real(kind=8)::tmax
+real(kind=8)::t
+type(csbasisfn),dimension(:),allocatable::bsout
+type(csbasisfn),dimension(:),allocatable::dbsdt
+integer::i
+! variable for output
+real(kind=8)::t2
+integer::n
+integer::j,ierr
+integer::dn
+! variable for ACF
+complex(kind=8)::ACFval
+integer::jcount
+real(kind=8) :: starttime,stoptime
+Print *, 'Hello, programme is starting'
+call CPU_TIME(starttime)
+!$********************************************************************************************************************!!
+!$                                                      Initialise basis set
+!$      Read in the input file
+!$      Allocate the memory
+!$      Initialise z,s, d -call initialisation routines
+!$********************************************************************************************************************!!
+Print *, 'Read In Basis Set'
+call ReadBSIN(bs,c)
+call ALCPAR
+call BSGAMCHK
+Print *, 'wohooooooooooooooooooo'
+END Program TestEverything
